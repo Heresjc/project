@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频页面</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../stylesheet/base.css">
+    <link rel="stylesheet" href="../stylesheet/video.css"/>
+    <link rel="stylesheet" href="../stylesheet/frozen.css"/>
+    <style type="text/css">
+        #modelView{z-index:0;opacity:0.7;height: 100%;width: 100%;position: relative;background-color: #fff;}
+        .playvideo{padding-top: auto;z-index: 9999;position: relative;}
+        .zy_media{z-index: 999999999}
+
+        /* 字幕 */
+        /**{margin:0px;padding:0px;}*/
+        /*body{width:100%;height:100%;overflow:hidden;}*/
+        .box{    margin: 130px auto 0 auto;width:400px;}
+        .lrc{position:relative;width:300px;height:200px;overflow-y:auto;background-color:#FFF;margin-left: 20px;}
+        .lrc li{display:block;padding:5px 0;}
+        .z-crt{color:#0f0;}
+        .ctrl{margin:0 auto;padding-left:100px;width:300px;}
+    </style>
+    <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
+</head>
+<body onmousewheel="return false;">
+
+<div class="ui-row-flex ui-whitespace videohrT">
+    <div class="ui-col ui-col-4 ">
+        <div class="vtitle"><a href="#">视频</a></div>
+        <div class="vhandout"><a href="#">讲义</a></div>
+    </div>
+    <div class="ui-col">
+        <div class="vdoCart" id="vdoCarta"></div>
+    </div>
+</div>
+<div class="videoCnt">
+    <h1 class="videoCntName">奥巴马演讲视频</h1>
+    <div class="video">
+            <div class="zy_media">
+                    <video id="video1">
+                        <source src="../img/video/79k888piC6bM.mp4" type="video/mp4">
+                        您的浏览器不支持HTML5视频
+                    </video>
+                </div>
+                    <div id="modelView">&nbsp;</div>
+    </div>
+    <div class="vdoTag">
+    </div>
+</div>
+
+
+
+<!--字幕-->
+<div class="vdoSub">
+    <div class="box" id="box">
+        <ul class="lrc" id="lrc"></ul>
+    <!-- </div> -->
+    <!-- <div class="subtitle">
+        <ul id="lrc"></ul>
+    </div> -->
+
+    <!-- <div class="vdoAudio"></div> -->
+    <!-- <div> -->
+
+    </div>
+    <input type="button" name="vdoShare"  value="分享" class="vdoShare">
+    <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">
+    Your browser does not support the audio element.
+</audio>
+</div>
+</body>
+
+<script src="../js/zy.media.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+
+// $(document).ready(function () {
+// 		var medisArray = new Array();
+
+//         var medis = "[00:8.971]作词：戴荃\n[00:16.971]作曲：戴荃\n[00:22.971]月溅星河\n[00:25.069]长路漫漫\n[00:29.769]风烟残尽\n[00:33.000]独影阑珊\n[00:36.560]谁叫我身手不凡\n[00:39.960]谁让我爱恨两难\n[00:42.860]到后来\n[00:46.313]肝肠寸断\n[00:50.713]幻世当空\n[00:53.113]恩怨休怀\n[00:57.563]舍悟离迷\n[01:00.314]六尘不改\n[01:04.750]且怒且悲且狂哉\n[01:07.885]是人是鬼是妖怪\n[01:10.835]不过是\n[01:14.135]心有魔债\n[01:17.747]叫一声佛祖\n[01:20.697]回头无岸\n[01:24.889]跪一人为师\n[01:27.639]生死无关\n[01:32.800]善恶浮世真假界\n[01:35.690]尘缘散聚不分明\n[01:38.940]难断\n[01:42.740]我要\n[01:44.760]这铁棒有何用\n[01:49.352]我有\n[01:51.353]这变化又如何\n[01:55.953]还是不安\n[01:59.053]还是氐惆\n[02:03.204]金箍当头\n[02:05.362]欲说还休\n[02:26.160]我要\n[02:28.010]这铁棒醉舞魔\n[02:33.192]我有\n[02:34.792]这变化乱迷浊\n[02:39.820]踏碎灵霄\n[02:42.243]放肆桀骜\n[02:46.693]世恶道险\n[02:48.793]终究难逃\n[02:54.526]这一棒\n[02:59.001]叫你灰飞烟灭";
+//         var medises = medis.split("\n");
+//         $.each(medises, function (i, item) {
+//             var t = item.substring(item.indexOf("[") + 1, item.indexOf("]"));
+//             medisArray.push({
+
+//                 // t: (t.split(":")[0] * 60 + parseFloat(t.split(":")[1])).toFixed(3),
+//                 t: (t),
+//                 c: item.substring(item.indexOf("]") + 1, item.length)
+//             });
+//         });
+//         var ul = $("#lrc");
+//         $.each(medisArray, function (i, item) {
+//             var li = $("<li>");
+//             li.html(item.c);
+//             li.attr("id",item.t);
+//             ul.append(li);
+//         });
+//         console.log(medisArray);
+//         滚动
+//         hlight();
+// 	});
+
+
+
+	//视屏 音频当前的播放位置发生改变时触发 
+	// $('#video1')[0].ontimeupdate=function(){ 
+	// 	if (this.currentTime /*当前播放的时间*/ > medisArray[i].t) {    
+	// 		//显示到页面    
+	// 		$('#gc ul').css('top',-i*40+200+'px'); //让歌词向上移动    
+	// 		$('#gc ul li').css('color','#fff');    
+	// 		$('#gc ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词
+	// 	}
+	// }
+
+
+
+
+// function gettime(){
+// 	myVid=document.getElementById("video1");
+// 	//当前播放进度
+// 	myVid.ontimeupdate=function(){
+// 	console.log(this.currentTime);
+// 	};
+// 	//用户已经拖动进度条
+// 	myVid.onseeked=function(){
+// 	return false;
+// 	}
+// 	//用户正在拖动进度条
+// 	myVid.onseeking=function(){
+// 	return false;
+// 	}
+// }
+
+// 视频
+ document.body.style.overflow='hidden';
+    zymedia('video',{autoplay: true});
+    var screenheight = window.screen.height/2;
+    $("#modelView").width(window.screen.width);
+    $("#modelView").height(window.screen.height);
+    var videoheight = $(".zy_media").height()/2;
+    var padding_top = screenheight-videoheight;
+    $(".playvideo").css({"top":padding_top});
+
+
+// 字幕
+
+(function(){
+// 经解析后的歌词
+var __lis = [{"offset":8000, "text":"作词：戴荃"}, 
+                {"offset":9000, "text":"作曲：戴荃"}, 
+                {"offset":10000, "text":"月溅星河"},
+                {"offset":11000, "text":"长路漫漫"},
+                {"offset":12000, "text":"风烟残尽"},
+                {"offset":13000, "text":"独影阑珊"},
+                {"offset":14000, "text":"谁叫我身手不凡"},
+                {"offset":15000, "text":"谁让我爱恨两难"},
+                {"offset":16000, "text":"到后来"},
+                {"offset":17000, "text":"肝肠寸断"},
+                {"offset":18000, "text":"幻世当空"},
+                {"offset":19000, "text":"恩怨休怀"},
+                {"offset":20000, "text":"舍悟离迷"},
+                {"offset":21000, "text":"六尘不改"},
+                {"offset":22000, "text":"且怒且悲且狂哉"},
+                {"offset":23000, "text":"是人是鬼是妖怪"},
+                {"offset":24000, "text":"不过是"},
+                {"offset":25000, "text":"心有魔债"}
+                ];
+			
+var __eul = document.getElementById("lrc");
+(function(){
+for (var i = 0; i < __lis.length; i++) {
+	var eli = document.createElement("li");
+	eli.innerText = __lis[i].text;
+	__eul.appendChild(eli);
+}
+})();
+
+var __freq = 10; // 滚动频率（ms）
+var __fraction = 2/5; // 高亮显示行在歌词显示区域中的固定位置百分比 
+
+/**
+ * 当前歌词行（lineno）滚动
+ */
+var __go = function(_lineno){
+    if(_lineno < __lis.length){
+
+	var _time;
+	if (_lineno === 0) {
+		_time = __lis[_lineno].offset;
+	} else {
+		_time = __lis[_lineno].offset - __lis[_lineno-1].offset;
+	}
+	var _timer = setTimeout(__go.bind(this, _lineno+1), _time);
+	
+	// 高亮下一行歌词
+	if (_lineno > 0) {
+		__eul.children[_lineno-1].setAttribute("class", "");
+	}
+	var _ep = __eul.children[_lineno];
+	_ep.setAttribute("class", "z-crt");
+
+	// 满足需求5，6
+	var _scrollTop;
+	if (_ep.offsetTop < __eul.clientHeight*__fraction){
+		_scrollTop = 0;
+	} else if (_ep.offsetTop > (__eul.scrollHeight - __eul.clientHeight*(1-__fraction))){
+		_scrollTop = __eul.scrollHeight - __eul.clientHeight;
+	} else {
+		_scrollTop = _ep.offsetTop - __eul.clientHeight*__fraction;
+	}
+
+	// 如用户拖动滚动条导致当前显示行超出显示区域范围，下一行直接定位到当前显示行
+	if (__eul.scrollTop > (_scrollTop + __eul.clientHeight*__fraction)
+		|| (__eul.scrollTop + __eul.clientHeight*__fraction) < _scrollTop){
+		__eul.scrollTop = _scrollTop;
+	} else { // 单行滚动
+		// 获取滚动步长
+		var _step = Math.ceil(Math.abs(__eul.scrollTop - _scrollTop)/(_time/__freq));
+		__scroll(__eul.scrollTop, _scrollTop, _step);	
+	}
+}
+
+};
+/**
+ * 歌词单行滚动实现
+ */
+__scroll = function(_crt, _dst, _step){
+	if(Math.abs(_crt - _dst) < _step){
+		return;
+	}
+	if(_crt < _dst){
+		__eul.scrollTop += _step;
+		_crt += _step;
+	} else {
+		__eul.scrollTop -= _step;
+		_crt -= _step;
+	}
+	setTimeout(__scroll.bind(this, _crt, _dst, _step), __freq);
+};
+
+__go(0);
+
+})();
+
+
+</script>
+
+</html>
