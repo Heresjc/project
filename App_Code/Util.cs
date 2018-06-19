@@ -541,4 +541,49 @@ public class Util
         dt.Dispose();
         da.Dispose();
     }
+
+    public static string[] ConvertDataTableToJsonItemArray(DataTable dt)
+    {
+        string[] jsonItemArray = new string[dt.Rows.Count];
+        for (int i = 0; i < dt.Rows.Count; i++)
+        {
+            string jsonItem = "";
+            foreach(DataColumn c in dt.Columns)
+            {
+                if (jsonItem.Trim().Equals(""))
+                {
+                    jsonItem = jsonItem + ", ";
+                }
+                jsonItem = jsonItem + "\"" + c.Caption.Trim() + "\": \"" + dt.Rows[i][c].ToString() + "\"";
+            }
+            jsonItemArray[i] = "{" + jsonItem + "}";
+        }
+        return jsonItemArray;
+    }
+
+    public static DataTable AssembleDataRowToTable(DataRow[] drArr)
+    {
+        if (drArr.Length == 0)
+        {
+            return null;
+        }
+        DataTable dt = drArr[0].Table.Clone();
+        foreach (DataRow drOri in drArr)
+        {
+            DataRow dr = dt.NewRow();
+            try
+            {
+                foreach (DataColumn c in dt.Columns)
+                {
+                    dr[c] = drOri[c.Caption];
+                }
+            }
+            catch
+            {
+
+            }
+            dt.Rows.Add(dr);
+        }
+        return dt;
+    }
 }

@@ -34,6 +34,8 @@ public class Course
         }
     }
 
+    
+
     public static Course[] GetAllCourses()
     {
         DataTable dt = DBHelper.GetDataTable(" select * from course ");

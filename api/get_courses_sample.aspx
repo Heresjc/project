@@ -12,12 +12,27 @@
         }
         else
         {
+            string sort = Util.GetSafeRequestValue(Request, "sort", "").Trim();
+            string level = Util.GetSafeRequestValue(Request, "level", "").Trim();
+            string teacher = Util.GetSafeRequestValue(Request, "teacher", "").Trim();
             Course[] courseAllArray = Course.GetAllCourses();
             string itemsJson = "";
             for (int i = 0; i < courseAllArray.Length; i++)
             {
                 if (courseAllArray[i].Price == 0 && courseAllArray[i].Show == 1)
                 {
+                    if (!sort.Equals("") && !courseAllArray[i]._fields["sort"].ToString().Trim().Equals(sort))
+                    {
+                        continue;
+                    }
+                    if (!level.Equals("") && !courseAllArray[i]._fields["level"].ToString().Trim().Equals(level))
+                    {
+                        continue;
+                    }
+                    if (!teacher.Trim().Equals("") && !courseAllArray[i]._fields["teacher"].ToString().Trim().Equals(teacher))
+                    {
+                        continue;
+                    }
                     string itemJson = "";
                     foreach (DataColumn c in courseAllArray[i]._fields.Table.Columns)
                     {
