@@ -6,7 +6,7 @@
         {
             
             Response.Write("{\"status\": 0, \"lessons\": ["
-                + "{\"id\": 1, \"title\": \"第一课\", \"description\": \"内容内容balabala\", \"head_image\": \"http://www.abc.com/lesson1.jpg\", \"sort\": 0, \"show\": 1}" 
+                + "{\"id\": 1, \"title\": \"第一课\", \"description\": \"内容内容balabala\", \"head_image\": \"http://www.abc.com/lesson1.jpg\", \"short_content\": \"balabala\", \"short_image\": \"http://www.abc.com/short_img.jpg\" \"sort\": 0, \"show\": 1}" 
                 + "]}");
 
         }
