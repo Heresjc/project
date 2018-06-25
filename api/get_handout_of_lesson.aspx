@@ -17,18 +17,27 @@
         else
         {
             int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "1"));
+
+
             Handout[] handoutArray = Lesson.GetHandouts(lessonId);
+
+            /*
             DataRow[] drArr = new DataRow[handoutArray.Length];
             for (int i = 0; i < drArr.Length; i++)
             {
                 drArr[i] = handoutArray[i]._fields;
             }
-            string[] itemJsonArr = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(drArr));
+            */
+            //string[] itemJsonArr = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(drArr));
             string json = "{\"status\": 0, \"handouts\": [";
-            for (int i = 0; i < itemJsonArr.Length; i++)
+            for (int i = 0; i < handoutArray.Length; i++)
             {
-                json = json + (i > 0 ? ", " : "") + itemJsonArr[i].Trim();
+                json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
             }
+
+
+
+
             Response.Write(json+"]}");
         }
     }

@@ -5,13 +5,14 @@ using System.Web;
 using System.Data;
 
 /// <summary>
-/// Summary description for Handout
+/// Summary description for Media
 /// </summary>
-public class Handout
+public class Media
 {
+
     public DataRow _fields;
 
-    public Handout()
+    public Media()
     {
         //
         // TODO: Add constructor logic here
@@ -31,25 +32,14 @@ public class Handout
         get
         {
             string json = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(new DataRow[] { _fields }))[0].Trim();
-            json = json.Remove(json.Length - 1, 1) + ", \"medias\": [";
-            Media[] mediaArray = GetMedia(id);
-            string mediaJson = "";
-            foreach (Media m in mediaArray)
-            {
-                if (!mediaJson.Trim().Equals(""))
-                {
-                    mediaJson = mediaJson + ", ";
-                }
-                mediaJson = m.json;
-            }
-            return json + mediaJson.Trim() + "]}";
+            return json;
         }
 
     }
 
-    public static Media[] GetMedia(int handoutId)
+    public static Media[] GetMedia(int lessonId)
     {
-        DataTable dt = DBHelper.GetDataTable(" select * from media where handout_id = " + handoutId.ToString() + " order by sort, [id] ");
+        DataTable dt = DBHelper.GetDataTable(" select * from media where lesson_id = " + lessonId.ToString() + " order by sort, [id] ");
         Media[] mediaArray = new Media[dt.Rows.Count];
         for (int i = 0; i < mediaArray.Length; i++)
         {

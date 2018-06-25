@@ -34,7 +34,14 @@ public class Course
         }
     }
 
+    public string json
+    {
+        get
+        {
+            return Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(new DataRow[] { _fields }))[0].Trim();
+        }
 
+    }
 
     public static Course[] GetAllCourses()
     {
@@ -60,4 +67,6 @@ public class Course
         }
         return lessonArray;
     }
+
+    
 }

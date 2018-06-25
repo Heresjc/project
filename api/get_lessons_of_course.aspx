@@ -15,16 +15,18 @@
         {
             int courseId = int.Parse(Util.GetSafeRequestValue(Request, "courseid", "1"));
             Lesson[] lessonArray = Course.GetLessons(courseId);
+            /*
             DataRow[] drArr = new DataRow[lessonArray.Length];
             for (int i = 0; i < drArr.Length; i++)
             {
                 drArr[i] = lessonArray[i]._fields;
             }
             string[] itemJsonArr = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(drArr));
+            */
             string json = "{\"status\": 0, \"lessons\": [";
-            for (int i = 0; i < itemJsonArr.Length; i++)
+            for (int i = 0; i < lessonArray.Length; i++)
             {
-                json = json + (i > 0 ? ", " : "") + itemJsonArr[i].Trim();
+                json = json + (i > 0 ? ", " : "") + lessonArray[i].json.Trim();
             }
             Response.Write(json+"]}");
         }
