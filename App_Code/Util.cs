@@ -550,7 +550,7 @@ public class Util
             string jsonItem = "";
             foreach(DataColumn c in dt.Columns)
             {
-                if (jsonItem.Trim().Equals(""))
+                if (!jsonItem.Trim().Equals(""))
                 {
                     jsonItem = jsonItem + ", ";
                 }

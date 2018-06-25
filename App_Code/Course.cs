@@ -34,7 +34,7 @@ public class Course
         }
     }
 
-    
+
 
     public static Course[] GetAllCourses()
     {
@@ -46,5 +46,18 @@ public class Course
             cArr[i]._fields = dt.Rows[i];
         }
         return cArr;
+    }
+
+    public static Lesson[] GetLessons(int courseId)
+    {
+        DataTable dt = DBHelper.GetDataTable(" select * from lesson where course_id = " + courseId + "  order by sort ");
+        Lesson[] lessonArray = new Lesson[dt.Rows.Count];
+        for (int i = 0; i < dt.Rows.Count; i++)
+        {
+
+            lessonArray[i] = new Lesson();
+            lessonArray[i]._fields = dt.Rows[i];
+        }
+        return lessonArray;
     }
 }
