@@ -41,7 +41,7 @@ public class Lesson
                 {
                     mediaJson = mediaJson + ", ";
                 }
-                mediaJson = m.json;
+                mediaJson = mediaJson + m.json;
             }
             return json + mediaJson.Trim() + "]}";
         }
