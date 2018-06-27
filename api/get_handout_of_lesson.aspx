@@ -16,7 +16,7 @@
         }
         else
         {
-            int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "1"));
+            int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "0"));
 
 
             Handout[] handoutArray = Lesson.GetHandouts(lessonId);
