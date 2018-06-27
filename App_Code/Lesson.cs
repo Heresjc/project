@@ -48,9 +48,9 @@ public class Lesson
 
     }
 
-    public static Handout[] GetHandouts(int lessonId)
+    public static Handout[] GetHandouts(int lessonId, string type)
     {
-        DataTable dt = DBHelper.GetDataTable(" select * from handout where lesson_id = " + lessonId.ToString() + " order by sort, [id] ");
+        DataTable dt = DBHelper.GetDataTable(" select * from handout where lesson_id = " + lessonId.ToString() + "   " +  ((!type.Trim().Equals(""))? " and [type] = '" + type.Trim() + "'  ": "")   + "  order by [type], sort, [id] ");
         Handout[] handoutArray = new Handout[dt.Rows.Count];
         for (int i = 0; i < dt.Rows.Count; i++)
         {

@@ -18,8 +18,9 @@
         {
             int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "0"));
 
+            string type = Util.GetSafeRequestValue(Request, "type", "");
 
-            Handout[] handoutArray = Lesson.GetHandouts(lessonId);
+            Handout[] handoutArray = Lesson.GetHandouts(lessonId, type);
 
             /*
             DataRow[] drArr = new DataRow[handoutArray.Length];

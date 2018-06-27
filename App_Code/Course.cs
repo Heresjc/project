@@ -57,7 +57,7 @@ public class Course
 
     public static Lesson[] GetLessons(int courseId)
     {
-        DataTable dt = DBHelper.GetDataTable(" select * from lesson where course_id = " + courseId + "  order by type,  sort ");
+        DataTable dt = DBHelper.GetDataTable(" select * from lesson where course_id = " + courseId + "  order by sort, [id] ");
         Lesson[] lessonArray = new Lesson[dt.Rows.Count];
         for (int i = 0; i < dt.Rows.Count; i++)
         {
