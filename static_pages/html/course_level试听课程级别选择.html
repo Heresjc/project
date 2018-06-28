@@ -109,7 +109,7 @@
             data: {"courseid":i},
             dataType: "json",
             success: function(data){
-                inn1(data , i);
+                inn1(data);
             }
         });
     }
@@ -121,7 +121,7 @@
             data: {"courseid":i},
             dataType: "json",
             success: function(data){
-                inn2(data , i);
+                inn2(data);
             }
         });
     }
@@ -133,16 +133,16 @@
             data: {"courseid":i},
             dataType: "json",
             success: function(data){
-                inn3(data , i);
+                inn3(data);
             }
         });
     }
 
-    function inn1(o , i) {
+    function inn1(o) {
         commentList = o.lessons;
         //列表模板引擎
         if (commentList.length > 0) {
-            var courselist_id = "course_list"+i;
+            var courselist_id = "course_list1";
             var list = commentList;
             var url = $("#"+courselist_id);
             var compiled = $.template($("#tpl1").text());
@@ -155,11 +155,11 @@
         }
     }
 
-    function inn2(o , i) {
+    function inn2(o) {
         commentList = o.lessons;
         //列表模板引擎
         if (commentList.length > 0) {
-            var courselist_id = "course_list"+i;
+            var courselist_id = "course_list2";
             var list = commentList;
             var url = $("#"+courselist_id);
             var compiled = $.template($("#tpl2").text());
@@ -172,11 +172,11 @@
         }
     }
 
-    function inn3(o , i) {
+    function inn3(o) {
         commentList = o.lessons;
         //列表模板引擎
         if (commentList.length > 0) {
-            var courselist_id = "course_list"+i;
+            var courselist_id = "course_list3";
             var list = commentList;
             var url = $("#"+courselist_id);
             var compiled = $.template($("#tpl3").text());
