@@ -54,7 +54,7 @@
                 <div id="course_list3" class="btn-group btn-group-justified" role="group" aria-label="..."></div>
             </div>
             <div class="col-xs-5 clImg">
-                <img id="head_image3" src="../img/course_level/climg.png" alt="">
+                <img id="head_image3" src="../img/course_level/climg.png" alt="" onclick="toVideo()">
             </div>
         </div>
     </div>
@@ -79,7 +79,7 @@
                         for (var i = 0; i < data.courses.length; i++){
                             if (data.courses[i].level == "初级"){
                                 $("#decription1").text(data.courses[i].decription);
-                                $("#head_image1").attr("src",data.courses[i].head_image);
+                                /*$("#head_image1").attr("src",data.courses[i].head_image);*/
                                 $("#courseid1").attr("value",data.courses[i].id);
                                 getcourse_list1(data.courses[i].id);
                             }else if (data.courses[i].level == "中级"){
@@ -196,6 +196,10 @@
             <button type="button" class="btn btn-default" onclick="change('_cj{{- i+1}}')">{{- i+1}}</button>
             <input type="hidden" id="description_cj{{- i+1}}" value="{{- commentList[i].description}}"/>
             <input type="hidden" id="head_image_cj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
+            <input type="hidden" id="lessons_id_cj{{- i+1}}" value="{{- commentList[i].id}}"/>
+            <input type="hidden" id="course_id_cj{{- i+1}}" value="{{- commentList[0].course_id}}"/>
+            <input type="hidden" id="media_url_cj{{- i+1}}" value=""/>
+            <input type="hidden" id="caption_file_url_cj{{- i+1}}" value=""/>
         </div>
     {{ } }}
 </script>
@@ -206,6 +210,10 @@
         <button type="button" class="btn btn-default" onclick="change('_zj{{- i+1}}')">{{- i+1}}</button>
         <input type="hidden" id="description_zj{{- i+1}}" value="{{- commentList[i].description}}"/>
         <input type="hidden" id="head_image_zj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
+        <input type="hidden" id="lessons_id_zj{{- i+1}}" value="{{- commentList[i].id}}"/>
+        <input type="hidden" id="course_id_zj{{- i+1}}" value="{{- commentList[0].course_id}}"/>
+        <input type="hidden" id="media_url_zj{{- i+1}}" value=""/>
+        <input type="hidden" id="caption_file_url_zj{{- i+1}}" value=""/>
     </div>
     {{ } }}
 </script>
@@ -216,6 +224,10 @@
         <button type="button" class="btn btn-default" onclick="change('_gj{{- i+1}}')">{{- i+1}}</button>
         <input type="hidden" id="description_gj{{- i+1}}" value="{{- commentList[i].description}}"/>
         <input type="hidden" id="head_image_gj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
+        <input type="hidden" id="lessons_id_gj{{- i+1}}" value="{{- commentList[i].id}}"/>
+        <input type="hidden" id="course_id_gj{{- i+1}}" value="{{- commentList[0].course_id}}"/>
+        <input type="hidden" id="media_url_gj{{- i+1}}" value=""/>
+        <input type="hidden" id="caption_file_url_gj{{- i+1}}" value=""/>
     </div>
     {{ } }}
 </script>
@@ -224,16 +236,128 @@
     function change(flag){
         var description = "description"+flag;
         var head_image = "head_image"+flag;
+        var lessons = "lessons_id"+flag;
+        var course = "course_id"+flag;
         if (flag.indexOf("_cj")!=-1){
             $("#decription1").text($("#"+description).val());
-            $("#head_image1").attr("src",$("#"+head_image).val());
+            /*$("#head_image1").attr("src",$("#"+head_image).val());*/
+            //lessons_id
+            var lessons_id = $("#"+lessons).val();
+            //course_id
+            var course_id = $("#"+course).val();
+            $.ajax({
+                type: "post",
+                url: "https://weixin-new-time-english.chinacloudsites.cn/api/get_lessons_of_course.aspx",
+                data: {"courseid":course_id},
+                dataType: "json",
+                success: function(data){
+                    if (data.lessons.length > 0){
+                        for(var i = 0; i < data.lessons.length ; i++){
+                            if (data.lessons[i].id == lessons_id){
+                                if (data.lessons[i].medias.length > 0){
+                                    //视频路径
+                                    var media_url = data.lessons[i].medias[0].media_url;
+                                    //视频字幕路径
+                                    var caption_file_url = data.lessons[i].medias[0].caption_file_url;
+                                    $("#media_url"+flag).attr("value",media_url);
+                                    $("#caption_file_url"+flag).attr("value",caption_file_url);
+                                    //为图片动态添加点击事件
+                                    $("#head_image1").click(function () {
+                                        toVideo(lessons_id,media_url,caption_file_url);
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
         }else if (flag.indexOf("_zj")!=-1){
             $("#decription2").text($("#"+description).val());
             $("#head_image2").attr("src",$("#"+head_image).val());
+            //lessons_id
+            var lessons_id = $("#"+lessons).val();
+            //course_id
+            var course_id = $("#"+course).val();
+            $.ajax({
+                type: "post",
+                url: "https://weixin-new-time-english.chinacloudsites.cn/api/get_lessons_of_course.aspx",
+                data: {"courseid":course_id},
+                dataType: "json",
+                success: function(data){
+                    if (data.lessons.length > 0){
+                        for(var i = 0; i < data.lessons.length ; i++){
+                            if (data.lessons[i].id == lessons_id){
+                                if (data.lessons[i].medias.length > 0){
+                                    //视频路径
+                                    var media_url = data.lessons[i].medias[0].media_url;
+                                    //视频字幕路径
+                                    var caption_file_url = data.lessons[i].medias[0].caption_file_url;
+                                    $("#media_url"+flag).attr("value",media_url);
+                                    $("#caption_file_url"+flag).attr("value",caption_file_url);
+                                    //为图片动态添加点击事件
+                                    $("#head_image2").click(function () {
+                                        toVideo(lessons_id,media_url,caption_file_url);
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            });
         }else if (flag.indexOf("_gj")!=-1){
             $("#decription3").text($("#"+description).val());
             $("#head_image3").attr("src",$("#"+head_image).val());
+            //lessons_id
+            var lessons_id = $("#"+lessons).val();
+            //course_id
+            var course_id = $("#"+course).val();
+            $.ajax({
+                type: "post",
+                url: "https://weixin-new-time-english.chinacloudsites.cn/api/get_lessons_of_course.aspx",
+                data: {"courseid":course_id},
+                dataType: "json",
+                success: function(data){
+                    if (data.lessons.length > 0){
+                        for(var i = 0; i < data.lessons.length ; i++){
+                            if (data.lessons[i].id == lessons_id){
+                                if (data.lessons[i].medias.length > 0){
+                                    //视频路径
+                                    var media_url = data.lessons[i].medias[0].media_url;
+                                    //视频字幕路径
+                                    var caption_file_url = data.lessons[i].medias[0].caption_file_url;
+                                    $("#media_url"+flag).attr("value",media_url);
+                                    $("#caption_file_url"+flag).attr("value",caption_file_url);
+                                    //为图片动态添加点击事件
+                                    $("#head_image3").click(function () {
+                                        toVideo(lessons_id,media_url,caption_file_url);
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            });
         }
+    }
+
+    /**
+     * @param a  讲义页面需要的lessonsid
+     * @param b  视频URL
+     * @param c  字幕URL
+     */
+    function toVideo(a,b,c) {
+        //跳转到视频页面  video视频页面.html  \project\static_pages\html\video视频页面.html
+        window.location.href = getRootPath() + "/project/static_pages/html/video视频页面.html?lessons_id="+a+"&media_url="+b+"&caption_file_url="+c;
+    }
+
+    function getRootPath(){
+        var curWwwPath=window.document.location.href;
+        var pathName=window.document.location.pathname;
+        var pos=curWwwPath.indexOf(pathName);
+        var localhostPaht=curWwwPath.substring(0,pos);
+        var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+        return(localhostPaht+projectName);
     }
 </script>
 
