@@ -11,6 +11,7 @@ using System.Xml;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
+
 using System.Security.Cryptography;
 /// <summary>
 /// Summary description for Util
@@ -554,7 +555,7 @@ public class Util
                 {
                     jsonItem = jsonItem + ", ";
                 }
-                jsonItem = jsonItem + "\"" + c.Caption.Trim() + "\": \"" + dt.Rows[i][c].ToString() + "\"";
+                jsonItem = jsonItem + "\"" + c.Caption.Trim() + "\": \"" + Util.ConvertEncode(dt.Rows[i][c].ToString()) + "\"";
             }
             jsonItemArray[i] = "{" + jsonItem + "}";
         }
@@ -585,5 +586,19 @@ public class Util
             dt.Rows.Add(dr);
         }
         return dt;
+    }
+
+    public static string ConvertEncode(string source)
+    {
+        string result = Encoding.UTF8.GetString(Encoding.Convert(Encoding.GetEncoding("GB2312"), Encoding.UTF8, Encoding.GetEncoding("GB2312").GetBytes(source)));
+        if (result == source)
+        {
+            return result;
+        }
+        else
+        {
+            return "";
+        }
+        
     }
 }
