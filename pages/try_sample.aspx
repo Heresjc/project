@@ -17,7 +17,7 @@
         }
         openId = WeixinUser.CheckToken(userToken);
 
-        Response.Write(openId.Trim());
+        Response.Write(Session["user_token"].ToString() + openId.Trim());
         Response.End();
 
         if (openId.Trim().Equals(""))
