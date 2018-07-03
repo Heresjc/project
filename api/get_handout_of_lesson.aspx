@@ -16,7 +16,7 @@
         }
         else
         {
-            int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "0"));
+            int lessonId = int.Parse(Util.GetSafeRequestValue(Request, "lessonid", "1"));
 
             string type = Util.GetSafeRequestValue(Request, "type", "");
 
@@ -30,15 +30,20 @@
             }
             */
             //string[] itemJsonArr = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(drArr));
+
             string json = "{\"status\": 0, \"handouts\": [";
+            /*
             for (int i = 0; i < handoutArray.Length; i++)
             {
                 json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
             }
-
-
-
-
+            */
+            
+            for (int i = 0; i < 1; i++)
+            {
+                json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
+            }
+            
             Response.Write(json+"]}");
         }
     }
