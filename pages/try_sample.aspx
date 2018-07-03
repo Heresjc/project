@@ -15,11 +15,8 @@
         {
             Response.Redirect("../authorize.aspx?callback=" + currentPageUrl, true);
         }
+        userToken = Session["user_token"].ToString().Trim();
         openId = WeixinUser.CheckToken(userToken);
-
-        Response.Write(Session["user_token"].ToString() + openId.Trim());
-        Response.End();
-
         if (openId.Trim().Equals(""))
         {
             Response.Redirect("../authorize.aspx?callback=" + currentPageUrl, true);
