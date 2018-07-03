@@ -39,7 +39,7 @@
             }
             */
             
-            for (int i = 0; i < 14; i++)
+            for (int i = 0; i < 10; i++)
             {
                 json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
             }
