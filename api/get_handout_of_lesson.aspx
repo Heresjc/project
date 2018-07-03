@@ -41,7 +41,7 @@
             
             for (int i = 0; i < 11; i++)
             {
-                json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
+                json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim().Replace("'","");
             }
             
             Response.Write(json+"]}");
