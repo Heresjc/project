@@ -32,18 +32,18 @@
             //string[] itemJsonArr = Util.ConvertDataTableToJsonItemArray(Util.AssembleDataRowToTable(drArr));
 
             string json = "{\"status\": 0, \"handouts\": [";
-            /*
+            
             for (int i = 0; i < handoutArray.Length; i++)
             {
                 json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim();
             }
-            */
             
+            /*
             for (int i = 0; i < 11; i++)
             {
                 json = json + (i > 0 ? ", " : "") + handoutArray[i].json.Trim().Replace("'","");
             }
-            
+            */
             Response.Write(json+"]}");
         }
     }
