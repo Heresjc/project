@@ -65,8 +65,8 @@
             string token = WeixinUser.CreateToken(openId, DateTime.Now.AddMinutes(100));
             Session["user_token"] = token;
             //WeixinUser user = new WeixinUser(openId);
-            Response.Write(token);
-            //Response.Redirect(callBack, true);
+            //Response.Write(token);
+            Response.Redirect(callBack, true);
         }
     }
 </script>
