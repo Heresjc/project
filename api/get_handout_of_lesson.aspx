@@ -3,6 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.ContentType = "application/json";
         if (Util.GetSafeRequestValue(Request, "sandbox", "0").Trim().Equals("1"))
         {
             Response.Write("{\"status\": 0, \"token_is_valid\": 1, \"sections\": [" +
