@@ -4,7 +4,7 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         //Response.AddHeader("Access-Control-Allow-Origin", "*");
-
+        Response.ContentType = "application/json";
         if (Util.GetSafeRequestValue(Request, "sandbox", "0").Trim().Equals("1"))
         {
             Response.Write("{\"status\": 0, \"courses\":["

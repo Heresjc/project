@@ -6,7 +6,7 @@
     protected void Page_Load(object sender, EventArgs e)
     {
        // WeixinUser u = new WeixinUser("ocTHCuPdHRCPZrcJb2qWOE_EYjeI");
-
+       Response.ContentType = "application/json";
         string token = Util.GetSafeRequestValue(Request, "token", " 5c803e0e060fef127483fefe2c3d4247c842cb42ae9e08014428670871111a819b078a0e");
         string openId = Util.GetSafeRequestValue(Request, "openid", "ocTHCuPdHRCPZrcJb2qWOE_EYjeI");
         string strClassId = Util.GetSafeRequestValue(Request, "classid", "19");

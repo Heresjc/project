@@ -4,6 +4,7 @@
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.ContentType = "application/json";
         Stream s = Request.InputStream;
         StreamReader sr = new StreamReader(s);
         string dataJson = sr.ReadToEnd();

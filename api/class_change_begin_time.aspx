@@ -3,6 +3,7 @@
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.ContentType = "application/json";
         string token = Util.GetSafeRequestValue(Request, "token", "");
 
         int classId = int.Parse(Util.GetSafeRequestValue(Request, "classid", ""));
