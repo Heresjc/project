@@ -79,7 +79,7 @@
                         for (var i = 0; i < data.courses.length; i++){
                             if (data.courses[i].level == "初级"){
                                 $("#decription1").text(data.courses[i].decription);
-                                $("#head_image1").attr("src",data.courses[i].head_image);
+//                                $("#head_image1").attr("src",data.courses[i].head_image);
                                 $("#courseid1").attr("value",data.courses[i].id);
                                 getcourse_list1(data.courses[i].id);
                             }else if (data.courses[i].level == "中级"){
