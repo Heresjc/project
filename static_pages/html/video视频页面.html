@@ -22,7 +22,7 @@
     <div class="ui-row-flex ui-whitespace videohrT">
         <div class="ui-col ui-col-4 ">
             <div class="vtitle"><a href="#">视频</a></div>
-            <div class="vhandout" id="handout"><a href="#">讲义</a></div>
+            <div class="vhandout" id="handout"><a id="tojy" href="#">讲义</a></div>
         </div>
         <div class="ui-col">
             <div class="vdoCart" id="vdoCarta"></div>
@@ -83,7 +83,7 @@
 
     function toVideo(a) {
         //跳转到讲义页面
-        window.location.href = getRootPath() + "/project/static_pages/html/Handout讲义.html?lessons_id="+a;
+        $("#tojy").attr("href","Handout讲义.html?lessons_id="+a);
     }
 
     function getRootPath(){
