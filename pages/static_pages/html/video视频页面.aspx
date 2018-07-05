@@ -83,7 +83,7 @@
 
     function toVideo(a) {
         //跳转到讲义页面
-        $("#tojy").attr("href","Handout讲义.html?lessons_id="+a);
+        $("#tojy").attr("href","Handout讲义.aspx?lessons_id="+a);
     }
 
     function getRootPath(){
