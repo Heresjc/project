@@ -1,6 +1,32 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
+﻿<%@ Page Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+    public string openId = "";
+
+    public string userToken = "";
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string currentPageUrl = Server.UrlEncode(Request.Url.ToString());
+        if (Session["user_token"] == null || Session["user_token"].ToString().Trim().Equals(""))
+        {
+            Response.Redirect("../authorize.aspx?callback=" + currentPageUrl, true);
+        }
+        userToken = Session["user_token"].ToString().Trim();
+        openId = WeixinUser.CheckToken(userToken);
+        if (openId.Trim().Equals(""))
+        {
+            Response.Redirect("../authorize.aspx?callback=" + currentPageUrl, true);
+        }
+
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
