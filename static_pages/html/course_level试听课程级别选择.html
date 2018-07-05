@@ -24,7 +24,7 @@
                     <div id="course_list1" class="btn-group btn-group-justified" role="group" aria-label="..."></div>
                 </div>
                 <div class="col-xs-5 clImg">
-                    <img id="head_image1" src="../img/course_level/climg.png" alt="">
+                    <a id="img1" href="#"><img id="head_image1" src="../img/course_level/climg.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 <div id="course_list2" class="btn-group btn-group-justified" role="group" aria-label="..."></div>
             </div>
             <div class="col-xs-5 clImg">
-                <img id="head_image2" src="../img/course_level/climg.png" alt="">
+                <a id="img2" href="#"><img id="head_image2" src="../img/course_level/climg.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
                 <div id="course_list3" class="btn-group btn-group-justified" role="group" aria-label="..."></div>
             </div>
             <div class="col-xs-5 clImg">
-                <img id="head_image3" src="../img/course_level/climg.png" alt="" onclick="toVideo()">
+                <a id="img3" href="#"><img id="head_image3" src="../img/course_level/climg.png" alt="" onclick="toVideo()"></a>
             </div>
         </div>
     </div>
@@ -79,7 +79,6 @@
                         for (var i = 0; i < data.courses.length; i++){
                             if (data.courses[i].level == "初级"){
                                 $("#decription1").text(data.courses[i].decription);
-//                                $("#head_image1").attr("src",data.courses[i].head_image);
                                 $("#head_image1").attr("src",data.courses[i].head_image);
                                 $("#courseid1").attr("value",data.courses[i].id);
                                 getcourse_list1(data.courses[i].id);
@@ -241,7 +240,6 @@
         var course = "course_id"+flag;
         if (flag.indexOf("_cj")!=-1){
             $("#decription1").text($("#"+description).val());
-            /*$("#head_image1").attr("src",$("#"+head_image).val());*/
             $("#head_image1").attr("src",$("#"+head_image).val());
             //lessons_id
             var lessons_id = $("#"+lessons).val();
@@ -265,7 +263,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image1").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url);
+                                        toVideo(lessons_id,media_url,caption_file_url,"img1");
                                     });
                                 }
                             }
@@ -299,7 +297,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image2").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url);
+                                        toVideo(lessons_id,media_url,caption_file_url,"img2");
                                     });
                                 }
                             }
@@ -332,7 +330,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image3").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url);
+                                        toVideo(lessons_id,media_url,caption_file_url,"img3");
                                     });
                                 }
                             }
@@ -348,9 +346,9 @@
      * @param b  视频URL
      * @param c  字幕URL
      */
-    function toVideo(a,b,c) {
-        //跳转到视频页面  video视频页面.html  \project\static_pages\html\video视频页面.html
-        window.location.href = getRootPath() + "/project/static_pages/html/video视频页面.html?lessons_id="+a+"&media_url="+b+"&caption_file_url="+c;
+    function toVideo(a,b,c,d) {
+        //跳转到视频页面
+        $("#"+d).attr("href","video视频页面.html?lessons_id="+a+"&media_url="+b+"&caption_file_url="+c)
     }
 
     function getRootPath(){
