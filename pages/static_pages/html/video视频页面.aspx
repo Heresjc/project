@@ -102,7 +102,7 @@
             var storage=window.localStorage;
             storage.setItem("lessons_id",a);
             //跳转到讲义页面
-            $("#tojy").attr("href","Handout讲义.html");
+            $("#tojy").attr("href","Handout讲义.aspx");
         }
 
     function getRootPath(){
