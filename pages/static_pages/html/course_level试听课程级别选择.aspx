@@ -281,6 +281,7 @@
                         for(var i = 0; i < data.lessons.length ; i++){
                             if (data.lessons[i].id == lessons_id){
                                 if (data.lessons[i].medias.length > 0){
+                                    var short_content = data.lessons[i].short_content;
                                     //视频路径
                                     var media_url = data.lessons[i].medias[0].media_url;
                                     //视频字幕路径
@@ -289,7 +290,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image1").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url,"img1");
+                                        toVideo(lessons_id,media_url,caption_file_url,"img1",short_content);
                                     });
                                 }
                             }
@@ -315,6 +316,7 @@
                         for(var i = 0; i < data.lessons.length ; i++){
                             if (data.lessons[i].id == lessons_id){
                                 if (data.lessons[i].medias.length > 0){
+                                    var short_content = data.lessons[i].short_content;
                                     //视频路径
                                     var media_url = data.lessons[i].medias[0].media_url;
                                     //视频字幕路径
@@ -323,7 +325,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image2").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url,"img2");
+                                        toVideo(lessons_id,media_url,caption_file_url,"img2",short_content);
                                     });
                                 }
                             }
@@ -348,6 +350,7 @@
                         for(var i = 0; i < data.lessons.length ; i++){
                             if (data.lessons[i].id == lessons_id){
                                 if (data.lessons[i].medias.length > 0){
+                                    var short_content = data.lessons[i].short_content;
                                     //视频路径
                                     var media_url = data.lessons[i].medias[0].media_url;
                                     //视频字幕路径
@@ -356,7 +359,7 @@
                                     $("#caption_file_url"+flag).attr("value",caption_file_url);
                                     //为图片动态添加点击事件
                                     $("#head_image3").click(function () {
-                                        toVideo(lessons_id,media_url,caption_file_url,"img3");
+                                        toVideo(lessons_id,media_url,caption_file_url,"img3",short_content);
                                     });
                                 }
                             }
@@ -372,14 +375,15 @@
      * @param b  视频URL
      * @param c  字幕URL
      */
-    function toVideo(a,b,c,d) {
-            var storage=window.localStorage;
-            storage.setItem("lessons_id",a);
-            storage.setItem("media_url",b);
-            storage.setItem("caption_file_url",c);
-            //跳转到视频页面
-            $("#"+d).attr("href","video视频页面.html");
-        }
+    function toVideo(a,b,c,d,e) {
+        var storage=window.localStorage;
+        storage.setItem("lessons_id",a);
+        storage.setItem("media_url",b);
+        storage.setItem("caption_file_url",c);
+        storage.setItem("short_content",e);
+        //跳转到视频页面
+        $("#"+d).attr("href","video视频页面.html");
+    }
 
     function getRootPath(){
         var curWwwPath=window.document.location.href;
