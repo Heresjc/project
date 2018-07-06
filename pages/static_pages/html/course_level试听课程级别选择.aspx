@@ -378,7 +378,7 @@
             storage.setItem("media_url",b);
             storage.setItem("caption_file_url",c);
             //跳转到视频页面
-            $("#"+d).attr("href","video视频页面.html");
+            $("#"+d).attr("href","video视频页面.aspx");
         }
 
     function getRootPath(){
