@@ -373,9 +373,13 @@
      * @param c  字幕URL
      */
     function toVideo(a,b,c,d) {
-        //跳转到视频页面
-        $("#"+d).attr("href","video视频页面.aspx?lessons_id="+a+"&media_url="+b+"&caption_file_url="+c);
-    }
+            var storage=window.localStorage;
+            storage.setItem("lessons_id",a);
+            storage.setItem("media_url",b);
+            storage.setItem("caption_file_url",c);
+            //跳转到视频页面
+            $("#"+d).attr("href","video视频页面.html");
+        }
 
     function getRootPath(){
         var curWwwPath=window.document.location.href;

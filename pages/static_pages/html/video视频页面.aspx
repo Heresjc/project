@@ -91,26 +91,27 @@
 
 <script>
     $(document).ready(function(){
-        var data = GetRequest();
+            var storage=window.localStorage;
+            var lessons_id = storage.getItem("lessons_id");
+            //视频URL
+            var media_url = storage.getItem("media_url");
+            //视频字幕URL
+            var caption_file_url = storage.getItem("caption_file_url");
 
-        var lessons_id = data.lessons_id;
-        //视频URL
-        var media_url = data.media_url;
-        //视频字幕URL
-        var caption_file_url = data.caption_file_url;
-
-        $("#sour").attr("src",media_url);
-        $("#tra").attr("src",caption_file_url);
-        //为讲义按钮动态添加点击事件
-        $("#handout").click(function () {
-            toVideo(lessons_id);
+            $("#sour").attr("src",media_url);
+            $("#tra").attr("src",caption_file_url);
+            //为讲义按钮动态添加点击事件
+            $("#handout").click(function () {
+                toVideo(lessons_id);
+            });
         });
-    });
 
     function toVideo(a) {
-        //跳转到讲义页面
-        $("#tojy").attr("href","Handout讲义.aspx?lessons_id="+a);
-    }
+            var storage=window.localStorage;
+            storage.setItem("lessons_id",a);
+            //跳转到讲义页面
+            $("#tojy").attr("href","Handout讲义.html");
+        }
 
     function getRootPath(){
         var curWwwPath=window.document.location.href;
@@ -119,21 +120,6 @@
         var localhostPaht=curWwwPath.substring(0,pos);
         var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
         return(localhostPaht+projectName);
-    }
-
-
-    //获取url中"?"符后的字串
-    function GetRequest() {
-        var url = location.search;
-        var theRequest = new Object();
-        if (url.indexOf("?") != -1) {
-            var str = url.substr(1);
-            strs = str.split("&");
-            for(var i = 0; i < strs.length; i ++) {
-                theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
-            }
-        }
-        return theRequest;
     }
 </script>
 

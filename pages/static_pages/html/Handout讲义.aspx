@@ -119,13 +119,11 @@
                 抗衰老受苦受累深蓝色
             </p>
             </p>-->
-            <img id="ysimg" src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">
+            <img id="ysimg" src="" class="img-responsive" alt="Responsive image">
         </div>
     </div>
 </div>
 <footer class="qtnFt">
-    <p>Blog template built for <a href="#">Bootstrap</a> by <a
-            href="#">@mdo</a>.</p>
     <p>
         <a href="#">Back to top</a>
     </p>
@@ -136,9 +134,10 @@
 <script>
 
     $(document).ready(function(){
-        var lessonsid = GetRequest().lessons_id;
-        getContent(lessonsid);
-    });
+            var storage=window.localStorage;
+            var lessonsid = storage.getItem("lessons_id");
+            getContent(lessonsid);
+        });
 
     function getContent(o) {
         $.ajax({
@@ -248,20 +247,6 @@
                 }
             }
         }
-    }
-
-    //获取url中"?"符后的字串
-    function GetRequest() {
-        var url = location.search;
-        var theRequest = new Object();
-        if (url.indexOf("?") != -1) {
-            var str = url.substr(1);
-            strs = str.split("&");
-            for(var i = 0; i < strs.length; i ++) {
-                theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
-            }
-        }
-        return theRequest;
     }
 </script>
 </html>
