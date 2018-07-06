@@ -35,91 +35,35 @@
     <link rel="stylesheet" href="../stylesheet/handout.css">
 </head>
 <body>
-<!--<header class="navbar navbar-static-top  qtnHt" id="top">
-    <div class="container">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">讲义</a>
-        </div>
-    </div>
-</header>-->
 <div class="container handout">
     <div class="blog-header" id="list">
         <div class="handoutKw">
             <h3 class="text-center">—重点单词—</h3>
-            <div id="zddc0">
-                <!--<p class="lead blog-description keywords">
-                    1.<span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                </p>
-                <p class="lead blog-description kwExplain">
-                    <span class="kwExStart">原句：</span>The official example template of creating a blog
-                    <span class="thisWord">Bootstrap</span>The
-                    official example template of creating a blog with Bootstrap,The official example template of creating a
-                    blog
-                    with Bootstrap,The official example template of creating a blog with Bootstrap.</p>
-                <p class="lead blog-description kwExplain">
-                    <span class="kwExStart">例句:</span>The official example template of creating a blog with <span
-                        class="thisWord">Bootstrap</span>.</p>-->
-            </div>
+            <div id="zddc0"></div>
         </div>
         <div class="handoutEw">
             <h3 class="text-center">—引申单词—</h3>
-
             <div id="ysdc0">
-                <!--<p class="lead blog-description ew">
-                    1.The official example template of creating a blog<span class="exWords">Bootstrap</span>.
-                </p>
-                <p class="lead blog-description keywords">
-                <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发
-                    奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊
-                    发奖金阿将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                </li>
-                <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                </p>-->
             </div>
-
         </div>
         <div class="handoutEw">
             <h3 class="text-center">—今日短语—</h3>
-
             <div id="jrdy0">
-                <!--<p class="text-center">come true 实现</p>-->
             </div>
         </div>
         <div class="handoutPic">
             <h3 class="text-center ">—重点句型—</h3>
-
             <div id="zdjx0"></div>
-            <!--<p class="lead blog-description">
-            <h4 class="ftBold textUnder">减肥减肥减肥减肥减肥减肥就</h4>
-            </p>
-            <p class="lead blog-description">
-                减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌 抗衰老受苦受累深蓝色
-            </p>-->
         </div>
         <div class="handoutPic">
             <h3 class="text-center ">—对话中文翻译—</h3>
             <div id="dhzwfy0"></div>
-            <!--<p class="lead blog-description">
-            <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-            <p class="lead blog-description">
-                减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                抗衰老受苦受累深蓝色
-            </p>
-            </p>-->
-            <img id="dhimg" src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">
+            <div id="dhimgdiv"></div>
         </div>
         <div class="handoutPic">
             <h3 class="text-center ">—引申知识的讲解—</h3>
             <div id="yszsjj0"></div>
-            <!--<p class="lead blog-description">
-            <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-            <p class="lead blog-description">
-                减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                抗衰老受苦受累深蓝色
-            </p>
-            </p>-->
-            <img id="ysimg" src="" class="img-responsive" alt="Responsive image">
+            <div id="ysimgdiv"></div>
         </div>
     </div>
 </div>
@@ -134,10 +78,10 @@
 <script>
 
     $(document).ready(function(){
-            var storage=window.localStorage;
-            var lessonsid = storage.getItem("lessons_id");
-            getContent(lessonsid);
-        });
+        var storage=window.localStorage;
+        var lessonsid = storage.getItem("lessons_id");
+        getContent(lessonsid);
+    });
 
     function getContent(o) {
         $.ajax({
@@ -227,7 +171,7 @@
 
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#dhimg").attr("src",o[i].medias[0].media_url);
+                        $("#dhimgdiv").html("<img id='dhimg' src='"+o[i].medias[0].media_url+"'>");
                     }
                 }
             }
@@ -242,7 +186,7 @@
 
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#ysimg").attr("src",o[i].medias[0].media_url);
+                        $("#ysimgdiv").html("<img id='ysimg' src='"+o[i].medias[0].media_url+"'>");
                     }
                 }
             }
