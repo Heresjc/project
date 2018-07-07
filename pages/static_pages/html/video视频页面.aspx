@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="../stylesheet/base.css">
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
+        <link rel="stylesheet" href="../stylesheet/video-js.css"/>
     <style type="text/css">
         .zy_media {
             z-index: 999999999
@@ -57,14 +58,7 @@
     <div class="videoCnt">
         <h1 class="videoCntName">奥巴马演讲视频</h1>
         <div class="video">
-            <div class="zy_media">
-                <video id="v" controls="controls">
-                   <!-- <source id="sour" src="../img/video/79k888piC6bM.mp4"  type="video/mp4"/>
-                    <track id="tra" src="../vtt/12345.vtt" kind="subtitles" label="English" srclang="zh" default/>-->
-                    <source id="sour" src=""  type="video/mp4"/>
-                    <track id="tra" src="" kind="subtitles" label="English" srclang="zh" default/>
-                </video>
-            </div>
+           <div class="zy_media" id="vvv"></div>
         </div>
     </div>
     <div class="vdoSub">
@@ -78,19 +72,20 @@
     </div>
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/video.js"></script>
 
 <script>
     $(document).ready(function(){
             var storage=window.localStorage;
-            var lessons_id = storage.getItem("lessons_id");
             //视频URL
             var media_url = storage.getItem("media_url");
             //视频字幕URL
             var caption_file_url = storage.getItem("caption_file_url");
-            var short_content = storage.getItem("short_content");
+            var html = "<video id='example_video_1' class='video-js vjs-default-skin' controls preload='none'> <source id='sour' src='"+media_url+"'  type='video/mp4'/><track id='tra' src='"+caption_file_url+"' kind='subtitles' srclang='en' label='English'/></video>";
+            $("#vvv").html(html);
 
-            $("#sour").attr("src",media_url);
-            $("#tra").attr("src",caption_file_url);
+            var lessons_id = storage.getItem("lessons_id");
+            var short_content = storage.getItem("short_content");
             $("#box").html("<div>"+short_content+"</div>");
             //为讲义按钮动态添加点击事件
             $("#handout").click(function () {
