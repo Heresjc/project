@@ -122,18 +122,7 @@
         var lessons_id = storage.getItem("lessons_id");
         var short_content = storage.getItem("short_content");
         $("#box").html("<div>"+short_content+"</div>");
-        //为讲义按钮动态添加点击事件
-        /*$("#handout").click(function () {
-            toVideo(lessons_id);
-        });*/
     });
-
-    /*function toVideo(a) {
-        var storage=window.localStorage;
-        storage.setItem("lessons_id",a);
-        //跳转到讲义页面
-        $("#tojy").attr("href","Handout讲义.html");
-    }*/
 
     function getRootPath(){
         var curWwwPath=window.document.location.href;
@@ -197,98 +186,116 @@
 
     function innzddc(o) {
         if (o.length > 0){
+            var html = "";
+            var j = 1;
             for(var i = 0; i < o.length; i++){
-                var j = i+1;
-                $("#zddc"+i).after("<div id='zddc"+j+"'>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>");
-
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#zddc"+i).after("<img id='zddcimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
                     }
+                }else{
+                    html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                    j++;
                 }
             }
+            $("#zddc0").html(html);
         }
     }
 
     function innysdc(o) {
         if (o.length > 0){
+            var html = "";
+            var j = 1;
             for(var i = 0; i < o.length; i++){
-                var j = i+1;
-//                $("#ysdc"+i).after("<div id='ysdc"+j+"'>" + j+"."+o[i].english_content + ":"+o[i].chinese_content+"</div>");
-                $("#ysdc"+i).after("<div id='ysdc"+j+"'>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>");
-
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-//                        $("#dhimgdiv").html("<img id='dhimg' src='"+o[i].medias[0].media_url+"'>");
-                        $("#ysdc"+i).after("<img id='ysimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
                     }
+                }else{
+                    html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                    j++;
                 }
             }
+            $("#ysdc0").html(html);
         }
     }
 
     function innjrdy(o) {
         if (o.length > 0){
+            var html = "";
+            var j = 1;
             for(var i = 0; i < o.length; i++){
-                var j = i+1;
-                $("#jrdy"+i).after("<div id='jrdy"+j+"'>"+ j+"."+o[i].english_content + ":"+o[i].chinese_content+"</div>");
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#jrdy"+i).after("<img id='jrimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
                     }
+                }else{
+                    html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                    j++;
                 }
             }
+            $("#jrdy0").html(html);
         }
     }
 
     function innzdjx(o) {
         if (o.length > 0){
+            var html = "";
+            var j = 1;
             for(var i = 0; i < o.length; i++){
-                var j = i+1;
-                $("#zdjx"+i).after("<div id='zdjx"+j+"'>" + j+"."+o[i].english_content + ":"+o[i].chinese_content+"</div>");
-
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#zdjx"+i).after("<img id='jrimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
                     }
+                }else{
+                    html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                    j++;
                 }
             }
+            $("#zdjx0").html(html);
         }
     }
 
     function inndhzwfy(o) {
-        console.dir(o);
         if (o.length > 0){
+
+            var html = "";
             var j = 1;
             for(var i = 0; i < o.length; i++){
-                if(o[i].chinese_content != ""){
-                    j++;
-                    $("#dhzwfy"+i).after("<div id='dhzwfy"+j+"'>"+ (j-1)+"." +o[i].chinese_content+"</div>");
-                }else {
-                    $("#dhzwfy"+i).after("<div id='dhzwfy"+j+"'>"+o[i].chinese_content+"</div>");
-                }
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#dhzwfy"+i).after("<img id='dhimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
+                    }
+                }else{
+                    if (o[i].english_content.length > 3){
+                        html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                        j++;
+                    }else{
+                        html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                        j++;
                     }
                 }
             }
+            $("#dhzwfy0").html(html);
         }
     }
 
     function innyszsjj(o) {
         if (o.length > 0){
+
+            var html = "";
             var j = 1;
             for(var i = 0; i < o.length; i++){
-                var j = i+1;
-                $("#yszsjj"+i).after("<div id='yszsjj"+j+"'>" + j+"."+o[i].english_content + ":"+o[i].chinese_content+"</div>");
                 if (o[i].medias.length > 0){
                     if (o[i].medias[0].type == "picture"){
-                        $("#ysimgdiv").html("<img id='ysimg' src='"+o[i].medias[0].media_url+"'>");
-//                        $("#yszsjj"+i).after("<img id='ysimg' src='"+o[i].medias[0].media_url+"'>");
+                        html = html + "<img src='"+o[i].medias[0].media_url+"'>";
                     }
+                }else{
+                    html = html + "<div>"+ j+"." + o[i].english_content + ":"+o[i].chinese_content+"</div>";
+                    j++;
                 }
             }
+            $("#yszsjj0").html(html);
         }
     }
 
