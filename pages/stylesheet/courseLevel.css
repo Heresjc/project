@@ -32,19 +32,15 @@
     margin-bottom: 10px;
     /*color: inherit;*/
     color: #fff;
-	background-color: #44ba80;
+    background-color: #44ba80;
     position: relative;
 }
 .clCnt .clImg {
-    /*color: #ffffff;*/
-    /*position: relative;*/
-    /*overflow: hidden;*/
-
     color: #ffffff;
     position: relative;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 40%;
+    height: 90%;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
