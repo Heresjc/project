@@ -42,8 +42,8 @@
 <body>
 <div id="tabdemo">
     <ul class="videohrT">
-        <li rel="tab-1" class="vtitle"><a href="#">视频</a></li>
-        <li rel="tab-2" class="vhandout" id="handout"><a id="tojy">讲义</a></li>
+        <li rel="tab-1" class="vtitle">视频</li>
+        <li rel="tab-2" class="vhandout" id="handout">讲义</li>
         <div class="vdoCart" id="vdoCarta"></div>
     </ul>
     <div rel="tab-1" class="content">

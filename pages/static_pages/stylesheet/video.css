@@ -127,4 +127,6 @@
 .box {
     margin: 15px auto 0 auto;
     width: 400px;
+    padding: 0 5px;
 }
+
