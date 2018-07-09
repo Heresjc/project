@@ -383,7 +383,7 @@
         storage.setItem("short_content", e);
         //跳转到视频页面
 //        $("#" + d).attr("href", "video视频页面.html");
-        $("#" + d).attr("href", "videoShow.html");
+        $("#" + d).attr("href", "videoShow.aspx");
     }
 
     function getRootPath() {
