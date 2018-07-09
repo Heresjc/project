@@ -71,6 +71,7 @@
 .video{
     width: 100%;
     height: 150px;
+    background-color: white;
 }
 .vdoSub{
     margin: 0 auto;
@@ -121,7 +122,9 @@
     display: none;
 }
 .zy_media {
-    z-index: 999999999
+    z-index: 999999999;
+    width:95%;
+    margin: 0 auto;
 }
 
 .box {
