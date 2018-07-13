@@ -116,7 +116,7 @@
         var media_url = storage.getItem("media_url");
         //视频字幕URL
         var caption_file_url = storage.getItem("caption_file_url");
-        var html = "<video id='example_video_1' class='video-js vjs-default-skin' controls preload='none'> <source id='sour' src='"+media_url+"'  type='video/mp4'/><track id='tra' src='"+caption_file_url+"' kind='subtitles' srclang='en' label='English' default></video>";
+        var html = "<video id='example_video_1' class='video-js vjs-default-skin vjs-big-play-centered' controls preload='none' width='300' height='260'> <source id='sour' src='"+media_url+"'  type='video/mp4'/><track id='tra' src='"+caption_file_url+"' kind='subtitles' srclang='en' label='English' default></video>";
         $("#vvv").html(html);
 
         var lessons_id = storage.getItem("lessons_id");
