@@ -49,21 +49,7 @@
         <div class="vdoCart" id="vdoCarta"></div>
     </ul>
     <div rel="tab-1" class="content">
-        <!--<div class="videoCnt">-->
-            <!--<h1 class="videoCntName"></h1>-->
-            <!--<div class="video">-->
-                <!--<div class="zy_media" id="vvv"></div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="vdoSub">-->
-            <!--<div class="box" id="box">-->
-
-            <!--</div>-->
-            <!--<input type="button" name="vdoShare" value="分享" class="vdoShare">-->
-            <!--<audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">-->
-                <!--Your browser does not support the audio element.-->
-            <!--</audio>-->
-        <!--</div>-->
+         <div class="box" id="box"></div>
     </div>
     <div rel="tab-2" class="content">
         <div class="videoCnt">
@@ -77,10 +63,6 @@
     </div>
     <div rel="tab-3" class="content">
         <div class="vdoSub">
-            <div class="box" id="box">
-
-            </div>
-            <input type="button" name="vdoShare" value="分享" class="vdoShare">
             <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">
                 Your browser does not support the audio element.
             </audio>
