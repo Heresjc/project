@@ -70,7 +70,7 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='example_video_1' src='' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
+                    <video id='video_1' src='' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
         var storage=window.localStorage;
         //视频URL
         var media_url = storage.getItem("media_url");
-        $("#example_video_1").attr("src" , media_url);
+        $("#video_1").attr("src" , media_url);
 
         var lessons_id = storage.getItem("lessons_id");
         var short_content = storage.getItem("short_content");
