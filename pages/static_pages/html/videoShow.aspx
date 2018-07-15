@@ -70,7 +70,7 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='video_1' src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
+                    <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
                 </div>
             </div>
         </div>
