@@ -70,7 +70,7 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='example_video_1' class='video-js vjs-default-skin' src='' x5-video-player-type='h5' x5-video-player-fullscreen='true' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
+                    <video id='example_video_1' src='' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
                 </div>
             </div>
         </div>
