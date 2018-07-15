@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../stylesheet/base.css">
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
+    <link rel="stylesheet" href="../stylesheet/video-js.css"/>
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
@@ -69,14 +70,16 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='video_1' src='' x5-video-player-type='h5' x5-video-player-fullscreen='true' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
+                    <video id='example_video_1' class='video-js vjs-default-skin' src='' x5-video-player-type='h5' x5-video-player-fullscreen='true' controls='true' controlslist='nodownload' preload='none' webkit-playsinline playsinline> </video>
                 </div>
             </div>
         </div>
     </div>
     <div rel="tab-3" class="content">
         <div class="vdoSub">
-            <div class="box" id="box"></div>
+            <div class="box" id="box">
+
+            </div>
             <input type="button" name="vdoShare" value="分享" class="vdoShare">
             <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">
                 Your browser does not support the audio element.
@@ -124,6 +127,7 @@
 
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
+<script src="../js/video.js"></script>
 
 <script type="text/javascript">
     $(function () {
@@ -134,7 +138,8 @@
         var storage=window.localStorage;
         //视频URL
         var media_url = storage.getItem("media_url");
-        $("#video_1").attr("src" , media_url);
+        $("#example_video_1").attr("src" , media_url);
+
         var lessons_id = storage.getItem("lessons_id");
         var short_content = storage.getItem("short_content");
         $("#box").html("<div>"+short_content+"</div>");
