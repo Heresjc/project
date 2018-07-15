@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="../stylesheet/base.css">
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
-    <link rel="stylesheet" href="../stylesheet/video-js.css"/>
+    <!--<link rel="stylesheet" href="../stylesheet/video-js.css"/>-->
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
@@ -127,7 +127,7 @@
 
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
-<script src="../js/video.js"></script>
+<!--<script src="../js/video.js"></script>-->
 
 <script type="text/javascript">
     $(function () {
