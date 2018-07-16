@@ -46,7 +46,7 @@
         <li rel="tab-2" class="vtitle">视频</li>
         <li rel="tab-3" class="vtitle">音频</li>
         <li rel="tab-4" class="vhandout">讲义</li>
-        <div class="vdoCart" id="vdoCarta"></div>
+        <!--<div class="vdoCart" id="vdoCarta"></div>-->
     </ul>
     <div rel="tab-1" class="content">
          <div class="box" id="box"></div>
