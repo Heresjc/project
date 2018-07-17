@@ -1,31 +1,43 @@
-.clHt{
+.clHt {
     background-color: #fff;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
 }
-.clHt a{
+.clCnt h3{
+    font-size: 22px;
+}
+.clCnt h4{
+    color: #3C70C6;
+}
+.clHt a {
     color: #5c5c5c;
 }
+
 .navbar-text {
     float: none;
     margin-right: 15px;
     margin-left: 15px;
 }
+
 .jumbotron p {
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: 200;
 }
-.navbar-text span:last-child{
+
+.navbar-text span:last-child {
     font-weight: bold;
 }
-.container .jumbotron{
+
+.container .jumbotron {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 6px;
 }
-.clCnt{
+
+.clCnt {
     padding-bottom: 40px;
 }
+
 .jumbotron {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -35,21 +47,56 @@
     background-color: #44ba80;
     position: relative;
 }
+#decription1{
+    font-size: 20px;
+}
+.videoCntDiv {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    background-color: #99CCFF;
+    position: relative;
+}
+
 .clCnt .clImg {
     color: #ffffff;
-    position: relative;
-    overflow: hidden;
-    width: 40%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* width: 11%; */
     height: 90%;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    right: 15px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
-.fl{
+.row {
+    width: 100%;
+    height: 100%;
+}
+
+.col-xs-7 {
+    position: relative;
+    /*position: absolute;*/
+    /*height: 100%;*/
+}
+
+#course_list1,
+#course_list2,
+#course_list3 {
+    position: absolute;
+    top: 200%;
+}
+
+.fl {
     float: left;
 }
-.btnNoone{
+
+.btnNoone {
     height: 30px;
     width: 30px;
     background-color: #fff;
@@ -58,4 +105,11 @@
     line-height: 30px;
     margin-left: 10px;
     color: black;
+}
+
+{
+    position: absolute
+;
+    bottom: -100%
+;
 }

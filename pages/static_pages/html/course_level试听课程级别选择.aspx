@@ -30,7 +30,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>试听课程级别选择</title>
+    <title></title>
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/courseLevel.css">
 </head>
@@ -38,49 +38,68 @@
 
 <div class="container clCnt">
     <h3 class="text-center">试听课程级别选择</h3>
-
+    <h4>名侦探柯南</h4>
     <p class="navbar-text ">
-        <span>初级课程</span>
+        <!--<span>初级课程</span>-->
+        <span></span>
     </p>
-    <div class="jumbotron">
-        <div class="row show-grid">
-            <div class="col-xs-7">
+        <div class="jumbotron videoCntDiv">
+            <div class="row show-grid">
+                <div class="col-xs-8">
+                    <div id="decription1"></div>
+                    <input type="hidden" id="courseid1" value=""/>
+                    <div id="course_list1"></div>
+                </div>
+                <div class="col-xs-4 clImg">
+                    <a id="img1" href="#"><img id="head_image1" src="../img/course_level/climg.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+  <!--  <div class="jumbotron">
+        &lt;!&ndash;<div class="row show-grid">&ndash;&gt;
+            <div class="jumOne fl" style="width: 58%">
                 <p id="decription1"></p>
                 <input type="hidden" id="courseid1" value=""/>
                 <div id="course_list1"></div>
             </div>
-            <div class="col-xs-5 clImg">
-                <a id="img1" href="#"><img id="head_image1" src="../img/course_level/climg.png" alt=""></a>
+            <div class="jumTwo fl " style="width: 40%">
+                <div class="clImg">
+                    <img id="head_image1" src="../img/course_level/climg.png" alt=""><a id="img1" href="#"></a>
+                </div>
             </div>
-        </div>
-    </div>
+        &lt;!&ndash;</div>&ndash;&gt;
+    </div>-->
     <p class="navbar-text">
-        <span>中级课程</span>
+        <!--<span>中级课程</span>-->
+        <span></span>
     </p>
-    <div class="jumbotron">
+    <div class="jumbotron videoCntDiv">
         <div class="row show-grid">
-            <div class="col-xs-7">
+            <div class="col-xs-8">
                 <p id="decription2"></p>
                 <input type="hidden" id="courseid2" value=""/>
                 <div id="course_list2"></div>
             </div>
-            <div class="col-xs-5 clImg">
+            <div class="col-xs-4 clImg">
                 <a id="img2" href="#"><img id="head_image2" src="../img/course_level/climg.png" alt=""></a>
             </div>
         </div>
     </div>
     <p class="navbar-text">
-        <span>高级课程</span>
+        <!--<span>高级课程</span>-->
+        <span></span>
     </p>
-    <div class="jumbotron">
+    <div class="jumbotron videoCntDiv">
         <div class="row show-grid">
-            <div class="col-xs-7">
+            <div class="col-xs-8">
                 <p id="decription3"></p>
                 <input type="hidden" id="courseid3" value=""/>
                 <div id="course_list3"></div>
             </div>
-            <div class="col-xs-5 clImg">
-                <a id="img3" href="#"><img id="head_image3" src="../img/course_level/climg.png" alt="" onclick="toVideo()"></a>
+            <div class="col-xs-4 clImg">
+                <a id="img3" href="#"><img id="head_image3" src="../img/course_level/climg.png" alt=""
+                                           onclick="toVideo()"></a>
             </div>
         </div>
     </div>
