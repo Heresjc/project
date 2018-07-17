@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.ContentType = "application/json";
+        //Response.ContentType = "application/json";
         if (Util.GetSafeRequestValue(Request, "sandbox", "0").Trim().Equals("1"))
         {
 
@@ -14,7 +14,7 @@
         }
         else
         {
-            int courseId = int.Parse(Util.GetSafeRequestValue(Request, "courseid", "1"));
+            int courseId = int.Parse(Util.GetSafeRequestValue(Request, "courseid", "3"));
             Lesson[] lessonArray = Course.GetLessons(courseId);
             /*
             DataRow[] drArr = new DataRow[lessonArray.Length];

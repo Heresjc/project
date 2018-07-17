@@ -555,7 +555,7 @@ public class Util
                 {
                     jsonItem = jsonItem + ", ";
                 }
-                jsonItem = jsonItem + "\"" + c.Caption.Trim() + "\": \"" + dt.Rows[i][c].ToString().Replace("\r", "<br/>").Replace("\n", "") + "\"";
+                jsonItem = jsonItem + "\"" + c.Caption.Trim() + "\": \"" + dt.Rows[i][c].ToString().Replace("\r", "<br/>").Replace("\n", "").Replace("\t", "").Replace("\"", "'") + "\"";
             }
             jsonItemArray[i] = "{" + jsonItem + "}";
         }
