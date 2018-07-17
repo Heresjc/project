@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        //Response.ContentType = "application/json";
+        Response.ContentType = "application/json";
         if (Util.GetSafeRequestValue(Request, "sandbox", "0").Trim().Equals("1"))
         {
 
