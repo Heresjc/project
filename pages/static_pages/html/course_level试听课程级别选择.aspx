@@ -34,6 +34,54 @@
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/courseLevel.css">
 </head>
+<!--<body>
+<div class="container clCnt">
+    <h3 class="">试听课程级别选择</h3>
+    <h4>名侦探柯南</h4>
+    <p class="navbar-text ">
+        &lt;!&ndash;<span>初级课程</span>&ndash;&gt;
+        <span></span>
+    </p>
+    <div class="clearfix videoCntDiv">
+        <div class="clIntduc">
+            <div id="decription1"></div>
+            <input type="hidden" id="courseid1" value=""/>
+            <div id="course_list1"></div>
+        </div>
+        <div class="clImg">
+            <a id="img1" href="#"><img id="head_image1" src="../img/course_level/climg.png" alt=""></a>
+        </div>
+    </div>
+    <p class="navbar-text">
+        &lt;!&ndash;<span>中级课程</span>&ndash;&gt;
+        <span></span>
+    </p>
+    <div class="clearfix videoCntDiv">
+        <div class="clIntduc">
+            <div id="decription2"></div>
+            <input type="hidden" id="courseid2" value=""/>
+            <div id="course_list2"></div>
+        </div>
+        <div class="clImg">
+            <a id="img2" href="#"><img id="head_image2" src="../img/course_level/climg.png" alt=""></a>
+        </div>
+    </div>
+    <p class="navbar-text">
+    &lt;!&ndash;<span>高级课程</span>&ndash;&gt;
+    <span></span>
+</p>
+    <div class="clearfix videoCntDiv">
+    <div class="clIntduc">
+        <div id="decription3"></div>
+        <input type="hidden" id="courseid3" value=""/>
+        <div id="course_list3"></div>
+    </div>
+    <div class="clImg">
+        <a id="img3" href="#"><img id="head_image3" src="../img/course_level/climg.png" alt=""></a>
+    </div>
+    </div>
+</div>
+</body>-->
 <body>
 <div class="container clCnt">
     <h3 class="">试听课程级别选择</h3>
@@ -81,11 +129,10 @@
     </div>
     </div>
 </div>
-
+</body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/template.js"></script>
-</body>
 <script>
     $(document).ready(function () {
         var commentList;

@@ -1,4 +1,5 @@
 body{
+
     width: 100%;
     height: 100%
 }
@@ -18,7 +19,7 @@ body{
     width:20%;
 }
 .vtitle{
-    background-color: #44ba80;
+    background-color: #99CCFF;
     /*width: 100px;*/
     height: 30px;
     line-height: 30px;
@@ -36,7 +37,7 @@ body{
     color: #ffffff;
 }
 .vhandout{
-    background-color: #44ba80;
+    background-color: #99CCFF;
     width: 100px;
     height: 30px;
     line-height: 30px;
@@ -124,7 +125,7 @@ body{
 
 /*一级分类点击后样式*/
 #tabdemo .selectActive {
-    background-color: #98FB98;
+    background-color: #8DEEEE;
 }
 /*二级分类对应样式*/
 .content {
@@ -148,4 +149,15 @@ body{
 #tabdemo{
     width: 100%;
     height: 100%;
+}
+.container h4.narration{
+    margin-top: 5%;
+    color: #8DEEEE;
+}
+.lead{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.container audio{
+    margin-top: 5%;
 }
