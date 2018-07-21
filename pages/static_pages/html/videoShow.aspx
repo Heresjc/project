@@ -126,7 +126,7 @@
                     <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
                 </div>
             </div>
-            <div style="margin-top: 80%">
+            <div style="margin-top: 90%">
                 <input type="button"  value="切换视频源" onclick="changeVideo()"/>
             </div>
         </div>
