@@ -126,6 +126,9 @@
                     <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
                 </div>
             </div>
+            <div style="margin-top: 80%">
+                <input type="button"  value="切换视频源" onclick="changeVideo()"/>
+            </div>
         </div>
     </div>
     <div rel="tab-3" class="content">
@@ -238,6 +241,11 @@
 <script src="../js/tabs.js"></script>
 
 <script type="text/javascript">
+
+    function changeVideo() {
+        $("#video_1").attr("src" , "../img/video/79k888piC6bM.mp4");
+    }
+
     $(function () {
         tabs_takes.init("tabdemo");
     })
