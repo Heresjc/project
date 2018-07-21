@@ -208,61 +208,64 @@
     }
 
     function inn1(o) {
-        commentList = o.lessons;
-        //列表模板引擎
-        if (commentList.length > 0) {
-            var courselist_id = "course_list1";
-            var list = commentList;
-            var url = $("#" + courselist_id);
-            var compiled = $.template($("#tpl1").text());
-            if (list.length > 0) {
-                var result = compiled({
-                    list: list
-                })
-                url.append($(result));
+            commentList = o.lessons;
+            //列表模板引擎
+            if (commentList.length > 0) {
+                var courselist_id = "course_list1";
+                var list = commentList;
+                var url = $("#" + courselist_id);
+                var compiled = $.template($("#tpl1").text());
+                if (list.length > 0) {
+                    var result = compiled({
+                        list: list
+                    })
+                    url.append($(result));
+                }
+                $('#btn_cj1').click();
             }
         }
-    }
 
-    function inn2(o) {
-        commentList = o.lessons;
-        //列表模板引擎
-        if (commentList.length > 0) {
-            var courselist_id = "course_list2";
-            var list = commentList;
-            var url = $("#" + courselist_id);
-            var compiled = $.template($("#tpl2").text());
-            if (list.length > 0) {
-                var result = compiled({
-                    list: list
-                })
-                url.append($(result));
+        function inn2(o) {
+            commentList = o.lessons;
+            //列表模板引擎
+            if (commentList.length > 0) {
+                var courselist_id = "course_list2";
+                var list = commentList;
+                var url = $("#" + courselist_id);
+                var compiled = $.template($("#tpl2").text());
+                if (list.length > 0) {
+                    var result = compiled({
+                        list: list
+                    })
+                    url.append($(result));
+                }
+                $('#btn_zj1').click();
             }
         }
-    }
 
-    function inn3(o) {
-        commentList = o.lessons;
-        //列表模板引擎
-        if (commentList.length > 0) {
-            var courselist_id = "course_list3";
-            var list = commentList;
-            var url = $("#" + courselist_id);
-            var compiled = $.template($("#tpl3").text());
-            if (list.length > 0) {
-                var result = compiled({
-                    list: list
-                })
-                url.append($(result));
+        function inn3(o) {
+            commentList = o.lessons;
+            //列表模板引擎
+            if (commentList.length > 0) {
+                var courselist_id = "course_list3";
+                var list = commentList;
+                var url = $("#" + courselist_id);
+                var compiled = $.template($("#tpl3").text());
+                if (list.length > 0) {
+                    var result = compiled({
+                        list: list
+                    })
+                    url.append($(result));
+                }
+                $('#btn_gj1').click();
             }
         }
-    }
 </script>
 
 <script type="text/template" id="tpl1">
     {{ for(var i = 0; i < commentList.length; i++) { }}
     <div class="btn-group" role="group">
-        <div class="btnNoone fl" onclick="change('_cj{{- i+1}}')">{{- i+1}}</div>
+        <div class="btnNoone fl" id="btn_cj{{- i+1}}" onclick="change('_cj{{- i+1}}')">{{- i+1}}</div>
         <input type="hidden" id="description_cj{{- i+1}}" value="{{- commentList[i].description}}"/>
         <input type="hidden" id="head_image_cj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
         <input type="hidden" id="lessons_id_cj{{- i+1}}" value="{{- commentList[i].id}}"/>
@@ -276,7 +279,7 @@
 <script type="text/template" id="tpl2">
     {{ for(var i = 0; i < commentList.length; i++) { }}
     <div class="btn-group" role="group">
-        <div class="btnNoone fl" onclick="change('_zj{{- i+1}}')">{{- i+1}}</div>
+        <div class="btnNoone fl" id="btn_zj{{- i+1}}" onclick="change('_zj{{- i+1}}')">{{- i+1}}</div>
         <input type="hidden" id="description_zj{{- i+1}}" value="{{- commentList[i].description}}"/>
         <input type="hidden" id="head_image_zj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
         <input type="hidden" id="lessons_id_zj{{- i+1}}" value="{{- commentList[i].id}}"/>
@@ -290,7 +293,7 @@
 <script type="text/template" id="tpl3">
     {{ for(var i = 0; i < commentList.length; i++) { }}
     <div class="btn-group" role="group">
-        <div class="btnNoone fl" onclick="change('_gj{{- i+1}}')">{{- i+1}}</div>
+        <div class="btnNoone fl" id="btn_gj{{- i+1}}" onclick="change('_gj{{- i+1}}')">{{- i+1}}</div>
         <input type="hidden" id="description_gj{{- i+1}}" value="{{- commentList[i].description}}"/>
         <input type="hidden" id="head_image_gj{{- i+1}}" value="{{- commentList[i].head_image}}"/>
         <input type="hidden" id="lessons_id_gj{{- i+1}}" value="{{- commentList[i].id}}"/>
