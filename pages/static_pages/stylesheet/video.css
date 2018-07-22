@@ -1,26 +1,39 @@
-body{
-
+body {
+    font-family: "Microsoft YaHei", Arial， Helvetica， sans-serif;
     width: 100%;
     height: 100%
 }
-.videohrT{
-    width:100%;
-    height:44px;
-    border:none;
-    padding:0;
-    margin:0;
-    overflow:hidden;
-    background:#fff;
+.box p{
+    margin: 0 0 ;
+}
+.videohrT {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #FCC;
+
+    width: 100%;
+    height: 44px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
     line-height: 44px;
     font-size: 16px;
     border-bottom: 1px solid #e6e6e6;
 }
-.videohrT li{
-    width:20%;
+
+.videohrT li {
+    width: 20%;
 }
-.vtitle{
-    background-color: #99CCFF;
-    /*width: 100px;*/
+
+.vtitle {
+    background-color: #fff;
+    color: #99CCFF;
+    /* width: 100px; */
     height: 30px;
     line-height: 30px;
     display: table-row;
@@ -29,14 +42,21 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     margin-top: 6px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     text-align: center;
     float: left;
+    border: 1px solid #99CCFF;
 }
-.vtitle a{
+
+.videohrT .vtitle:first-child {
+    margin-left: 2%;
+}
+
+.vtitle a {
     color: #ffffff;
 }
-.vhandout{
+
+.vhandout {
     background-color: #99CCFF;
     width: 100px;
     height: 30px;
@@ -48,15 +68,16 @@ body{
     overflow: hidden;
     margin-top: 6px;
     /*margin-left: 30px;*/
-    margin-left:2%;
+    /*margin-left: 2%;*/
     text-align: center;
     float: left;
 }
-.vhandout a{
+
+.vhandout a {
     color: #ffffff;
 }
 
-.videohrT .vdoCart{
+.videohrT .vdoCart {
     width: 20px;
     height: 20px;
     float: right;
@@ -66,33 +87,40 @@ body{
     margin-top: 10px;
     margin-right: 11px;
 }
+
 .videoCnt {
     width: 100%;
     background-color: #fff;
     text-align: center;
 }
-.videoCnt h1{
+
+.videoCnt h1 {
     font-size: 14px;
 }
-.videoCntName{
+
+.videoCntName {
     padding-top: 5px;
 }
-.video{
+
+.video {
     width: 100%;
     /*height: 150px;*/
     margin-top: 20%;
     background-color: white;
 }
-.vdoSub{
+
+.vdoSub {
     margin: 4% auto;
     position: relative;
     background-color: #fff;
 }
+
 .vdoSub .subtitle {
     width: 85%;
     margin: 0 15px;
 }
-.vdoShare{
+
+.vdoShare {
     width: 90%;
     height: 30px;
     background-color: #44ba80;
@@ -104,13 +132,15 @@ body{
     color: #fff;
 
 }
-.vdoAudio{
+
+.vdoAudio {
     width: 95%;
     height: 38px;
     /* margin: 10px auto; */
     background: url(../img/video/vdoAudio.png);
 }
-.vdoTag{
+
+.vdoTag {
     width: 30px;
     height: 30px;
     background: url(../img/video/vdoTag.jpg) no-repeat;
@@ -119,45 +149,76 @@ body{
     top: 310px;
     z-index: 2;
 }
+
 .ui-dialog {
     display: none;
 }
 
 /*一级分类点击后样式*/
 #tabdemo .selectActive {
-    background-color: #8DEEEE;
+    color: black;
+    background-color: #99CCFF;
 }
+
 /*二级分类对应样式*/
 .content {
     display: none;
+    margin-top: 10%;
 }
+
 .zy_media {
     z-index: 999999999;
-    width:95%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .box {
-    margin: 0 auto;
+    margin: 14% auto;
     width: 95%;
 }
 
 /*音频 固定最下面*/
-.vdoSub audio{
-    position:fixed;
+.vdoSub audio {
+    position: fixed;
 }
-#tabdemo{
+
+#tabdemo {
     width: 100%;
     height: 100%;
 }
-.container h4.narration{
+
+.container h4.narration {
     margin-top: 5%;
     color: #8DEEEE;
 }
-.lead{
+
+.lead {
     margin-top: 10%;
     margin-bottom: 10%;
 }
-.container audio{
+
+.copyright {
+    line-height: 26px;
     margin-top: 5%;
+}
+
+.container audio {
+    margin-top: 5%;
+}
+
+.videohrT li.list {
+    border-bottom: 1px solid #6c6;
+    width: 5%;
+    margin-top: 5%;
+    float: left;
+}
+
+/*切换音源*/
+.videoBtn{
+    width: 60px;
+    height:30px;
+    background: url("../img/video/open.png") 0px 0px no-repeat;
+}
+.buttonOff{
+    background: url("../img/video/open.png") 0px -30px no-repeat;
 }

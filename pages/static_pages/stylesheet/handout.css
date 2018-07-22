@@ -1,3 +1,6 @@
+body{
+    font-family:"Microsoft YaHei",Arial， Helvetica， sans-serif;
+}
 .qtnHt{
     background-color: #a397e2;
     margin-bottom: 0 ;
@@ -13,9 +16,9 @@
 }
 .handout .keywords .keyword,
 .handout .handoutEw .keyword{
-      color: #44ba80;
-      font-weight:bold;
-  }
+    color: #44ba80;
+    font-weight:bold;
+}
 .handout .kwExplain{
     color: #333;
 }
@@ -47,4 +50,10 @@
 }
 .qtnFt a{
     color: #fff;
+}
+.handoutPic .hr{
+    height: 1px;
+    width: 100%;
+    margin-top: 5%;
+    background-color: blue;
 }

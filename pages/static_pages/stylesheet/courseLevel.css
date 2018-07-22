@@ -1,3 +1,6 @@
+body{
+    font-family:"Microsoft YaHei",Arial， Helvetica， sans-serif;
+}
 .clHt {
     background-color: #fff;
     margin-bottom: 0;
@@ -85,7 +88,7 @@
     text-align: center;
     vertical-align: middle;
     right: 15px;
-    box-shadow:3px 3px 10px 5px #888888;
+    box-shadow:-3px -2px 8px 0px #888888;
 }
 
 .row {

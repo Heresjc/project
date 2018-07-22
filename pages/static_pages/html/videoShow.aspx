@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="../stylesheet/base.css">
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
-    <!--<link rel="stylesheet" href="../stylesheet/video-js.css"/>-->
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
@@ -111,9 +110,12 @@
 <div id="tabdemo">
     <ul class="videohrT">
         <li rel="tab-1" class="vtitle">背景</li>
+        <li class="list"></li>
         <li rel="tab-2" class="vtitle">视频</li>
+        <li class="list"></li>
         <li rel="tab-3" class="vtitle">音频</li>
-        <li rel="tab-4" class="vhandout">讲义</li>
+        <li class="list"></li>
+        <li rel="tab-4" class="vtitle">讲义</li>
     </ul>
     <div rel="tab-1" class="content">
          <div class="box" id="box"></div>
@@ -126,17 +128,20 @@
                     <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
                 </div>
             </div>
-            <div style="margin-top: 90%">
-                <input type="button"  value="切换视频源" onclick="changeVideo()"/>
+        </div>
+        <div style="margin-top: 90%">
+            <div class="buttonOpen videoBtn">
+
             </div>
+            <!--<input type="button"  value="切换视频源" onclick="changeVideo()"/>-->
         </div>
     </div>
     <div rel="tab-3" class="content">
-        <div class="vdoSub">
-            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
+        <!--<div class="vdoSub">-->
+            <!--<audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">-->
+                <!--Your browser does not support the audio element.-->
+            <!--</audio>-->
+        <!--</div>-->
     </div>
     <div rel="tab-4" class="content">
         <div class="container handout">
