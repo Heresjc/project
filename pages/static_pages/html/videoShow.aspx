@@ -149,102 +149,116 @@
         </div>
     </div>
     <div rel="tab-4" class="content">
-        <div class="container handout">
-            <div class="blog-header">
-                <h3>Andersen's Fairy Tale -chapter 10 -知识点总结</h3>
-                <h4>2018-07-15 Eason 薄荷阅读MintReading</h4>
-                <h4 class="narration">薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading</h4>
-                <audio src="../img/video/ai_xiao_de_yan_jing.mp3" controls="controls">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="container handout">
+                <div class="blog-header">
+                    <h3>Andersen's Fairy Tale -chapter 10 -知识点总结</h3>
+                    <h4>2018-07-15 Eason 薄荷阅读MintReading</h4>
+                    <h4 class="narration">
+                        薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading</h4>
+                    <audio src="../img/video/ai_xiao_de_yan_jing.mp3" controls="controls">
+                        Your browser does not support the audio element.
+                    </audio>
 
-                <div class="handoutKw">
-                    <h3 class="text-center">—重点单词—</h3>
-                    <div id="zddc0"></div>
-                   <!-- <p class="lead blog-description keywords">
-                        1.<span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                    </p>
-                    <p class="lead blog-description kwExplain">
-                        <span class="kwExStart">原句：</span>The official example template of creating a blog
-                        <span class="thisWord">Bootstrap</span>The
-                        official example template of creating a blog with Bootstrap,The official example template of creating a
-                        blog
-                        with Bootstrap,The official example template of creating a blog with Bootstrap.</p>
-                    <p class="lead blog-description kwExplain">
-                        <span class="kwExStart">例句:</span>The official example template of creating a blog with <span
-                            class="thisWord">Bootstrap</span>.</p>-->
-                </div>
-                <div class="handoutEw">
-                    <h3 class="text-center">—引申单词—</h3>
-                    <div id="ysdc0"></div>
-                    <!--<p class="lead blog-description ew">
-                        1.The official example template of creating a blog<span class="exWords">Bootstrap</span>.
-                    </p>
-                    <p class="lead blog-description keywords">
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发
-                        奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊
-                        发奖金阿将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                    </li>
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                    </p>-->
-                </div>
-                <div class="handoutEw">
-                    <h3 class="text-center">—今日短语—</h3>
-                    <div id="jrdy0"></div>
-                    <!--<p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>-->
-                </div>
-                <div class="handoutPic">
-                    <h3 class="text-center ">—重点句型—</h3>
-                    <div id="zdjx0"></div>
-                    <!--<p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减肥减肥减肥减肥减肥就</h4>
-                    </p>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌 抗衰老受苦受累深蓝色
-                    </p>-->
-                </div>
-                <div class="handoutPic">
-                    <h3 class="text-center ">—对话中文翻译—</h3>
-                    <div id="dhzwfy0"></div>
-                    <div id="dhimgdiv"></div>
-                    <!--<p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                        抗衰老受苦受累深蓝色
-                    </p>
-                    </p>
-                    <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
-                </div>
-                <div class="handoutPic">
-                    <h3 class="text-center ">—引申知识的讲解—</h3>
-                    <div id="yszsjj0"></div>
-                    <div id="ysimgdiv"></div>
-                    <!--<p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                        抗衰老受苦受累深蓝色
-                    </p>
-                    </p>
-                    <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
+                    <div class="handoutKw">
+                        <h3 class="text-center">—重点单词—</h3>
+                        <div id="zddc0"></div>
+                        <!-- <p class="lead blog-description keywords">
+                             1.<span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
+                         </p>
+                         <p class="lead blog-description kwExplain">
+                             <span class="kwExStart">原句：</span>The official example template of creating a blog
+                             <span class="thisWord">Bootstrap</span>The
+                             official example template of creating a blog with Bootstrap,The official example template of creating a
+                             blog
+                             with Bootstrap,The official example template of creating a blog with Bootstrap.</p>
+                         <p class="lead blog-description kwExplain">
+                             <span class="kwExStart">例句:</span>The official example template of creating a blog with <span
+                                 class="thisWord">Bootstrap</span>.</p>-->
+                    </div>
+                    <div class="handoutEw">
+                        <h3 class="text-center">—引申单词—</h3>
+                        <div id="ysdc0"></div>
+                        <!--<p class="lead blog-description ew">
+                            1.The official example template of creating a blog<span class="exWords">Bootstrap</span>.
+                        </p>
+                        <p class="lead blog-description keywords">
+                        <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发
+                            奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊
+                            发奖金阿将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
+                        </li>
+                        <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
+                        <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
+                        </p>-->
+                    </div>
+                    <div class="handoutEw">
+                        <h3 class="text-center">—今日短语—</h3>
+                        <div id="jrdy0"></div>
+                        <!--<p class="text-center">come true 实现</p>
+                        <p class="text-center">come true 实现</p>
+                        <p class="text-center">come true 实现</p>
+                        <p class="text-center">come true 实现</p>
+                        <p class="text-center">come true 实现</p>
+                        <p class="text-center">come true 实现</p>-->
+                    </div>
+                    <div class="handoutPic">
+                        <h3 class="text-center ">—重点句型—</h3>
+                        <div id="zdjx0"></div>
+                        <!--<p class="lead blog-description">
+                        <h4 class="ftBold textUnder">减肥减肥减肥减肥减肥减肥就</h4>
+                        </p>
+                        <p class="lead blog-description">
+                            减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌 抗衰老受苦受累深蓝色
+                        </p>-->
+                    </div>
+                    <div class="handoutPic">
+                        <h3 class="text-center ">—对话中文翻译—</h3>
+                        <div id="dhzwfy0"></div>
+                        <div id="dhimgdiv"></div>
+                        <!--<p class="lead blog-description">
+                        <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
+                        <p class="lead blog-description">
+                            减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
+                            抗衰老受苦受累深蓝色
+                        </p>
+                        </p>
+                        <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
+                    </div>
+                    <div class="handoutPic">
+                        <h3 class="text-center ">—引申知识的讲解—</h3>
+                        <div id="yszsjj0"></div>
+                        <div id="ysimgdiv"></div>
+                        <p class="lead blog-description">
+                        <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
+                        <p class="lead blog-description">
+                            减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
+                            抗衰老受苦受累深蓝色
+                        </p>
+                        </p>
+                        <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">
+                    </div>
+                    <div class="handoutPic">
+                        <h3 class="text-center ">—每日一句—</h3>
+                        <div class="dayImg">
+                            <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">
+                        </div>
+                    </div>
+                    <div class="handoutPic">
+                        <h3 class="text-center copyright"></h3>
+                        <p>版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权</p>
+                        <div class="dayImg">
+                            <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">
+                        </div>
+                    </div>
                 </div>
             </div>
+            <footer class="qtnFt">
+                <p>Blog template built for <a href="#">Bootstrap</a> by <a
+                        href="#">@mdo</a>.</p>
+                <p>
+                    <a href="#">Back to top</a>
+                </p>
+            </footer>
         </div>
-        <footer class="qtnFt">
-            <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a
-                    href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-                <a href="#">Back to top</a>
-            </p>
-        </footer>
-    </div>
 </div>
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
