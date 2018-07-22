@@ -247,6 +247,14 @@
 
 <script type="text/javascript">
 
+    $(".videoBtn").click(function () {
+        if($(this).hasClass("buttonOpen")){
+            $(this).removeClass("buttonOpen").addClass("buttonOff");
+        }else{
+            $(this).removeClass("buttonOff").addClass("buttonOpen");
+        }
+    });
+
     function changeVideo() {
         $("#video_1").attr("src" , "../img/video/79k888piC6bM.mp4");
     }
