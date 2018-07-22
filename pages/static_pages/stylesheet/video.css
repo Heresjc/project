@@ -3,9 +3,11 @@ body {
     width: 100%;
     height: 100%
 }
-.box p{
-    margin: 0 0 ;
+
+.box p {
+    margin: 0 0;
 }
+
 .videohrT {
     position: fixed;
     top: 0;
@@ -34,8 +36,8 @@ body {
     background-color: #fff;
     color: #99CCFF;
     /* width: 100px; */
-    height: 30px;
-    line-height: 30px;
+    height: 66%;
+    line-height: 165%;
     display: table-row;
     font-size: 14px;
     border-radius: 30px;
@@ -110,15 +112,20 @@ body {
 }
 
 .vdoSub {
-    margin: 4% auto;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
     background-color: #fff;
+    /*margin: 4% auto;*/
+    /*position: relative;*/
+    /*background-color: #fff;*/
 }
 
-.vdoSub .subtitle {
-    width: 85%;
-    margin: 0 15px;
-}
+/*.vdoSub .subtitle {*/
+/*!*width: 85%;*!*/
+/*!*margin: 0 15px;*!*/
+/*}*/
 
 .vdoShare {
     width: 90%;
@@ -179,7 +186,8 @@ body {
 
 /*音频 固定最下面*/
 .vdoSub audio {
-    position: fixed;
+    width: 100%;
+    background: #f2f2f2;
 }
 
 #tabdemo {
@@ -214,11 +222,36 @@ body {
 }
 
 /*切换音源*/
-.videoBtn{
+.videoBtn {
     width: 60px;
-    height:30px;
+    height: 30px;
     background: url("../img/video/open.png") 0px 0px no-repeat;
 }
-.buttonOff{
+
+.buttonOff {
     background: url("../img/video/open.png") 0px -30px no-repeat;
+}
+
+h3.copyright {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.vdoSubtitle {
+    width: 100%;
+    /* height: 400px; */
+    line-height: 30px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    /* overflow-x: hidden; */
+}
+
+.vdoSubtitle .vdoSubtle {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    word-wrap: break-word;
+    word-break: normal;
 }
