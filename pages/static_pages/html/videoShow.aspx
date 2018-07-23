@@ -234,8 +234,8 @@
                 </div>
             </div>
         </div>
-        <div class="bakc">&and;</div>
-        <!-- <footer class="qtnFt">
+        <!-- <div class="back">&and;</div>
+        <footer class="qtnFt">
             <p>Blog template built for <a href="#">Bootstrap</a> by <a
                     href="#">@mdo</a>.</p>
             <p>
