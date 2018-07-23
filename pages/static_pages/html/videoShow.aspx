@@ -53,17 +53,20 @@
     		top: 0;
     		right:0;
     		left:0;
+    		text-align: center;
     	}
     	.change a {
     		display: inline-block;
 		    height: 30px;
 		    line-height: 30px;
-		    background-color: #99CCFF;
-		    color: #fff;
-		    border-radius: 4px;
 		    padding: 0 10px;
 		    margin-right: 0px;
 		    cursor: pointer;
+    	}
+    	.change a.set {
+		    background-color: #99CCFF;
+		    color: #fff;
+		    border-radius: 4px;
     	}
     </style>
 </head>
@@ -94,7 +97,7 @@
             </div>
         </div>
         <div class="change">
-        		<a id="url1">视频源１</a>
+        		<a id="url1" class="set">视频源１</a>
         		<a id="url2">视频源２</a>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
@@ -235,36 +238,31 @@
             $(this).removeClass("buttonOff").addClass("buttonOpen");
         }
     });
-		changeVideo();
-    function changeVideo() {
-        var flag = $("#video_3").val();
-        var video1Url = $("#video_1").attr("src");
-        var video2Url = $("#video_2").val();
         $("#url1").click(function(){
-        		$("#video_1").attr("src", video2Url);
-            $("#video_2").attr("value", video1Url);
-            $("#video_3").attr("value", "video_2");
+					changeVideo();
+					$(this).addClass("set").siblings("a").removeClass(".set");
         })
         $("#url2").click(function(){
-        		$("#video_1").attr("src", video2Url);
+        		changeVideo();
+					$(this).addClass("set").siblings("a").removeClass(".set");
+        })
+    function changeVideo() {
+        var flag = $("#video_3").val();
+        if (flag == "video_1"){
+            var video1Url = $("#video_1").attr("src");
+            var video2Url = $("#video_2").val();
+
+            $("#video_1").attr("src", video2Url);
+           $("#video_2").attr("value", video1Url);
+           $("#video_3").attr("value", "video_2");
+        }else if(flag == "video_2"){
+           var video1Url = $("#video_1").attr("src");
+            var video2Url = $("#video_2").val();
+
+            $("#video_1").attr("src", video2Url);
             $("#video_2").attr("value", video1Url);
             $("#video_3").attr("value", "video_1");
-        })
-        //if (flag == "video_1"){
-            //var video1Url = $("#video_1").attr("src");
-            //var video2Url = $("#video_2").val();
-
-           // $("#video_1").attr("src", video2Url);
-           // $("#video_2").attr("value", video1Url);
-           // $("#video_3").attr("value", "video_2");
-        //}else if(flag == "video_2"){
-           // var video1Url = $("#video_1").attr("src");
-           // var video2Url = $("#video_2").val();
-
-           // $("#video_1").attr("src", video2Url);
-            //$("#video_2").attr("value", video1Url);
-           // $("#video_3").attr("value", "video_1");
-        //}
+        }
     }
 
 
