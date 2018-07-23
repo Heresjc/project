@@ -42,13 +42,11 @@
     		width: 90%;
     		margin: 0 auto;
     		padding: 0;
+    		overflow:hidden;
     	}
     	.container .videoCntDiv {
     		margin-bottom: 20px;
     		min-height: 114px;
-    	}
-    	h1 {
-    		margin-top: 10px !important;
     	}
     </style>
 </head>
