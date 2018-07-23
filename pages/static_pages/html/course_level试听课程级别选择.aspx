@@ -41,7 +41,11 @@
     		height: 100%;
     		width: 90%;
     		margin: 0 auto;
-    		padding: 0 5%;
+    		padding: 0;
+    	}
+    	.container .videoCntDiv {
+    		margin-bottom: 20px;
+    		min-height: 114px;
     	}
     </style>
 </head>
