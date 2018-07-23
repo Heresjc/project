@@ -235,21 +235,21 @@
             $("#video_2").attr("value", video1Url);
             $("#video_3").attr("value", "video_1");
         })
-        <!-- if (flag == "video_1"){
-            var video1Url = $("#video_1").attr("src");
-            var video2Url = $("#video_2").val();
+        //if (flag == "video_1"){
+            //var video1Url = $("#video_1").attr("src");
+            //var video2Url = $("#video_2").val();
 
-            $("#video_1").attr("src", video2Url);
-            $("#video_2").attr("value", video1Url);
-            $("#video_3").attr("value", "video_2");
-        }else if(flag == "video_2"){
-            var video1Url = $("#video_1").attr("src");
-            var video2Url = $("#video_2").val();
+           // $("#video_1").attr("src", video2Url);
+           // $("#video_2").attr("value", video1Url);
+           // $("#video_3").attr("value", "video_2");
+        //}else if(flag == "video_2"){
+           // var video1Url = $("#video_1").attr("src");
+           // var video2Url = $("#video_2").val();
 
-            $("#video_1").attr("src", video2Url);
-            $("#video_2").attr("value", video1Url);
-            $("#video_3").attr("value", "video_1");
-        } -->
+           // $("#video_1").attr("src", video2Url);
+            //$("#video_2").attr("value", video1Url);
+           // $("#video_3").attr("value", "video_1");
+        //}
     }
 
 
