@@ -47,6 +47,9 @@
     		margin-top: 0;
     		height: 200px;
     	}
+    	.change {
+    		margin-top: 50px;
+    	}
     </style>
 </head>
 <body>
@@ -75,8 +78,10 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 90%">
-            <div class="buttonOpen videoBtn" onclick="changeVideo()"></div>
+        <div class="change">
+        		<a id="url1">视频源１</a>
+        		<a id="url2">视频源２</a>
+            <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
     <div rel="tab-3" class="content">
@@ -218,7 +223,19 @@
 
     function changeVideo() {
         var flag = $("#video_3").val();
-        if (flag == "video_1"){
+        var video1Url = $("#video_1").attr("src");
+        var video2Url = $("#video_2").val();
+        $("#url1").click(function(){
+        		$("#video_1").attr("src", video2Url);
+            $("#video_2").attr("value", video1Url);
+            $("#video_3").attr("value", "video_2");
+        })
+        $("#url2").click(function(){
+        		$("#video_1").attr("src", video2Url);
+            $("#video_2").attr("value", video1Url);
+            $("#video_3").attr("value", "video_1");
+        })
+        <!-- if (flag == "video_1"){
             var video1Url = $("#video_1").attr("src");
             var video2Url = $("#video_2").val();
 
@@ -232,7 +249,7 @@
             $("#video_1").attr("src", video2Url);
             $("#video_2").attr("value", video1Url);
             $("#video_3").attr("value", "video_1");
-        }
+        } -->
     }
 
 
