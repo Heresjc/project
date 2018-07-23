@@ -44,11 +44,26 @@
     		text-align:center;
     	}
     	.videoCnt .video {
-    		margin-top: 0;
+    		margin-top: 40px;
     		height: 200px;
     	}
     	.change {
     		margin-top: 50px;
+    		position: absolute;
+    		top: 0;
+    		right:0;
+    		left:0;
+    	}
+    	.change a {
+    		display: inline-block;
+		    height: 30px;
+		    line-height: 30px;
+		    background-color: #99CCFF;
+		    color: #fff;
+		    border-radius: 4px;
+		    padding: 0 10px;
+		    margin-right: 0px;
+		    cursor: pointer;
     	}
     </style>
 </head>
@@ -220,7 +235,7 @@
             $(this).removeClass("buttonOff").addClass("buttonOpen");
         }
     });
-
+		changeVideo();
     function changeVideo() {
         var flag = $("#video_3").val();
         var video1Url = $("#video_1").attr("src");
