@@ -68,6 +68,9 @@
 		    color: #fff;
 		    border-radius: 4px;
     	}
+    	.blog-header img {
+    		width: 100%;
+    	}
     </style>
 </head>
 <body>
@@ -240,11 +243,11 @@
     });
         $("#url1").click(function(){
 					changeVideo();
-					$(this).addClass("set").siblings("a").removeClass(".set");
+					$(this).addClass("set").siblings("a").removeClass("set");
         })
         $("#url2").click(function(){
         		changeVideo();
-					$(this).addClass("set").siblings("a").removeClass(".set");
+					$(this).addClass("set").siblings("a").removeClass("set");
         })
     function changeVideo() {
         var flag = $("#video_3").val();
