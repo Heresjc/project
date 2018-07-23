@@ -47,6 +47,9 @@
     		margin-bottom: 20px;
     		min-height: 114px;
     	}
+    	h1 {
+    		margin-top: 10px !important;
+    	}
     </style>
 </head>
 <body>
