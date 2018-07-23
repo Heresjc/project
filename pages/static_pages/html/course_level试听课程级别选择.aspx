@@ -33,15 +33,26 @@
     <title>试听课程级别选择</title>
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/courseLevel.css">
+    <style>
+    	html,body {
+    		height:100%;
+    	}
+    	.container.clCnt {
+    		height: 100%;
+    		width: 90%;
+    		margin: 0 auto;
+    		padding: 0 5%;
+    	}
+    </style>
 </head>
 <!--<body>
 <div class="container clCnt">
     <h3 class="">试听课程级别选择</h3>
     <h4>名侦探柯南</h4>
-    <p class="navbar-text ">
+    <!-- <p class="navbar-text ">
         &lt;!&ndash;<span>初级课程</span>&ndash;&gt;
         <span></span>
-    </p>
+    </p> -->
     <div class="clearfix videoCntDiv">
         <div class="clIntduc">
             <div id="decription1"></div>
@@ -52,10 +63,10 @@
             <a id="img1" href="#"><img id="head_image1" src="../img/course_level/climg.png" alt=""></a>
         </div>
     </div>
-    <p class="navbar-text">
+    <!-- <p class="navbar-text">
         &lt;!&ndash;<span>中级课程</span>&ndash;&gt;
         <span></span>
-    </p>
+    </p> -->
     <div class="clearfix videoCntDiv">
         <div class="clIntduc">
             <div id="decription2"></div>
@@ -66,10 +77,10 @@
             <a id="img2" href="#"><img id="head_image2" src="../img/course_level/climg.png" alt=""></a>
         </div>
     </div>
-    <p class="navbar-text">
+    <!-- <p class="navbar-text">
     &lt;!&ndash;<span>高级课程</span>&ndash;&gt;
     <span></span>
-</p>
+</p> -->
     <div class="clearfix videoCntDiv">
     <div class="clIntduc">
         <div id="decription3"></div>
