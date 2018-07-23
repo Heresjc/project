@@ -45,7 +45,7 @@
     	}
     	.videoCnt .video {
     		margin-top: 0;
-    		height: auto;
+    		height: 200px;
     	}
     </style>
 </head>
