@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="../stylesheet/courseLevel.css">
 </head>
 <!--<body>
-<div class="container clCnt">
+<div class="container clCnt20">
     <h3 class="">试听课程级别选择</h3>
     <h4>名侦探柯南</h4>
     <p class="navbar-text ">
@@ -83,7 +83,7 @@
 </div>
 </body>-->
 <body>
-<div class="container clCnt20">
+<div class="container clCnt">
     <h3 class="">试听课程级别选择</h3>
     <h4>名侦探柯南</h4>
     <p class="navbar-text ">
