@@ -37,75 +37,14 @@
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
+    <style>
+    	.videohrT .vtitle {
+    		height: 30px;
+    		line-height: 30px;
+    		text-align:center;
+    	}
+    </style>
 </head>
-<!--<body>
-<div id="tabdemo">
-    <ul class="videohrT">
-        <li rel="tab-1" class="vtitle">**</li>
-        <li rel="tab-2" class="vtitle">视频</li>
-        <li rel="tab-3" class="vtitle">音频</li>
-        <li rel="tab-4" class="vhandout">讲义</li>
-        &lt;!&ndash;<div class="vdoCart" id="vdoCarta"></div>&ndash;&gt;
-    </ul>
-    <div rel="tab-1" class="content">
-         <div class="box" id="box"></div>
-    </div>
-    <div rel="tab-2" class="content">
-        <div class="videoCnt">
-            <h1 class="videoCntName"></h1>
-            <div class="video">
-                <div class="zy_media" id="vvv">
-                    <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true' controlslist='nodownload' preload="auto" webkit-playsinline playsinline> </video>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div rel="tab-3" class="content">
-        <div class="vdoSub">
-            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </div>
-    <div rel="tab-4" class="content">
-    <div class="container handout">
-        <div class="blog-header" id="list">
-            <div class="handoutKw">
-                <h3 class="text-center">—重点单词—</h3>
-                <div id="zddc0"></div>
-            </div>
-            <div class="handoutEw">
-                <h3 class="text-center">—引申单词—</h3>
-                <div id="ysdc0"></div>
-            </div>
-            <div class="handoutEw">
-                <h3 class="text-center">—今日短语—</h3>
-                <div id="jrdy0"></div>
-            </div>
-            <div class="handoutPic">
-                <h3 class="text-center ">—重点句型—</h3>
-                <div id="zdjx0"></div>
-            </div>
-            <div class="handoutPic">
-                <h3 class="text-center ">—对话中文翻译—</h3>
-                <div id="dhzwfy0"></div>
-                <div id="dhimgdiv"></div>
-            </div>
-            <div class="handoutPic">
-                <h3 class="text-center ">—引申知识的讲解—</h3>
-                <div id="yszsjj0"></div>
-                <div id="ysimgdiv"></div>
-            </div>
-            <footer class="qtnFt">
-                <p>
-                    <a href="#">Back to top</a>
-                </p>
-            </footer>
-        </div>
-    </div>
-</div>
-</div>
-</body>-->
 <body>
 <div id="tabdemo">
     <ul class="videohrT">
