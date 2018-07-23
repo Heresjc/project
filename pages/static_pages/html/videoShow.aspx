@@ -43,6 +43,10 @@
     		line-height: 30px;
     		text-align:center;
     	}
+    	.videoCnt .video {
+    		margin-top: 0;
+    		height: auto;
+    	}
     </style>
 </head>
 <body>
