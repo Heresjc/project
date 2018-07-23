@@ -71,6 +71,20 @@
     	.blog-header img {
     		width: 100%;
     	}
+    	.videohrT {
+    		z-index: 99;
+    	}
+    	.back {
+    		width: 10px;
+    		height: 10px;
+    		border: 1px solid #ccc;
+    		line-height: 10px;
+    		text-align: center;
+    		bakcground: #fff;
+    		position: fixed;
+    		bottom: 30px;
+    		right: 10px;
+    	}
     </style>
 </head>
 <body>
@@ -220,13 +234,14 @@
                 </div>
             </div>
         </div>
-        <footer class="qtnFt">
+        <div class="bakc">&and;</div>
+        <!-- <footer class="qtnFt">
             <p>Blog template built for <a href="#">Bootstrap</a> by <a
                     href="#">@mdo</a>.</p>
             <p>
                 <a href="#">Back to top</a>
             </p>
-        </footer>
+        </footer> -->
     </div>
 </div>
 </body>
