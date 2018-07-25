@@ -120,15 +120,18 @@
         </div>
     </div>
     <div rel="tab-3" class="content">
-            <div class="vdoSubtitle">
-                <div class="vdoSubtle">水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网</div>
-            </div>
-            <div class="vdoSub">
-                <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls" id="audioUrl">
-                    Your browser does not support the audio element.
-                </audio>
+        <div class="vdoSubtitle">
+            <div class="vdoSubtle">
+                <div id="lyricContainer"></div>
+                <!--水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网-->
             </div>
         </div>
+        <div class="vdoSub">
+            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls" id="audioUrl">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
     <div rel="tab-4" class="content">
         <div class="container handout">
             <div class="blog-header">
@@ -143,93 +146,39 @@
                 <div class="handoutKw">
                     <h3 class="text-center">—重点单词—</h3>
                     <div id="zddc0"></div>
-                    <!-- <p class="lead blog-description keywords">
-                         1.<span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                     </p>
-                     <p class="lead blog-description kwExplain">
-                         <span class="kwExStart">原句：</span>The official example template of creating a blog
-                         <span class="thisWord">Bootstrap</span>The
-                         official example template of creating a blog with Bootstrap,The official example template of creating a
-                         blog
-                         with Bootstrap,The official example template of creating a blog with Bootstrap.</p>
-                     <p class="lead blog-description kwExplain">
-                         <span class="kwExStart">例句:</span>The official example template of creating a blog with <span
-                             class="thisWord">Bootstrap</span>.</p>-->
                 </div>
                 <div class="handoutEw">
                     <h3 class="text-center">—引申单词—</h3>
                     <div id="ysdc0"></div>
-                    <!--<p class="lead blog-description ew">
-                        1.The official example template of creating a blog<span class="exWords">Bootstrap</span>.
-                    </p>
-                    <p class="lead blog-description keywords">
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发
-                        奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊发奖金阿将军阿娇阿娇费劲啊
-                        发奖金阿将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。
-                    </li>
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                    <li><span class="keyword">[turn]</span>在文中的幕府将军阿娇阿娇费劲啊发奖金阿娇阿娇将阿飞咳咳恶寇。</li>
-                    </p>-->
                 </div>
                 <div class="handoutEw">
                     <h3 class="text-center">—今日短语—</h3>
                     <div id="jrdy0"></div>
-                    <!--<p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>
-                    <p class="text-center">come true 实现</p>-->
                 </div>
                 <div class="handoutPic">
                     <h3 class="text-center ">—重点句型—</h3>
                     <div id="zdjx0"></div>
-                    <!--<p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减肥减肥减肥减肥减肥就</h4>
-                    </p>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌 抗衰老受苦受累深蓝色
-                    </p>-->
                 </div>
                 <div class="handoutPic">
                     <h3 class="text-center ">—对话中文翻译—</h3>
                     <div id="dhzwfy0"></div>
                     <div id="dhimgdiv"></div>
-                    <!--<p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                        抗衰老受苦受累深蓝色
-                    </p>
-                    </p>
-                    <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
                 </div>
                 <div class="handoutPic">
                     <h3 class="text-center ">—引申知识的讲解—</h3>
                     <div id="yszsjj0"></div>
                     <div id="ysimgdiv"></div>
-                   <!-- <p class="lead blog-description">
-                    <h4 class="ftBold textUnder">减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就</h4>
-                    <p class="lead blog-description">
-                        减肥减肥减肥减肥减肥减肥就分居费就放假几分几分计减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就减肥减深蓝色劳伦斯里山路减肥减肥减肥减肥就算机老师乱收费抗衰老深蓝色六神磊磊孙孚凌
-                        抗衰老受苦受累深蓝色
-                    </p>
-                    </p>
-                    <img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
                 </div>
                 <div class="handoutPic">
                     <h3 class="text-center ">—每日一句—</h3>
                     <div class="dayImg">
                         <div id="mryj_img"></div>
-                        <!--<img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
                     </div>
                 </div>
                 <div class="handoutPic">
                     <h3 class="text-center copyright"></h3>
-                    <!--<p>版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权版权</p>-->
                     <div class="dayImg">
                         <div id = "bqsm"></div>
-                        <!--<img src="../img/handout/aduImg.jpg" class="img-responsive" alt="Responsive image">-->
                     </div>
                 </div>
             </div>
@@ -241,6 +190,48 @@
 <script src="../js/tabs.js"></script>
 
 <script type="text/javascript">
+
+    var audio;
+        window.onload = function(){
+            audio=document.getElementById("audioUrl");
+
+
+            //显示歌词的元素
+            var lyricContainer = $("#lyricContainer");
+            //获取lrc转换成的字幕文件的
+            var lrcText = "[00:00.17]庭竹 - 公主的天堂\n" +
+                "[00:05.40]作曲:陈嘉唯、Skot Suyama 陶山、庭竹\n" +
+                "[00:07.33]作词:庭竹\n" +
+                "[00:15.59]风铃的音谱 在耳边打转\n" +
+                "[00:18.62]城堡里 公主也摆脱了黑暗的囚禁\n" +
+                "[00:22.82]她一点点地 无声悄悄地慢慢长大\n" +
+                "[00:26.36]期待着 深锁木门后的世界\n" +
+                "[01:38.72][00:29.76]\n" +
+                "[01:51.48][00:30.32]树上 小鸟的轻响 在身边打转\n" +
+                "[01:55.35][00:34.09]公主已 忘记木制衣橱背后的惆怅\n" +
+                "[01:59.65][00:38.35]她跳舞唱歌天真无邪地寻找属于自己的光亮和快乐\n" +
+                "[02:06.98][00:45.76]\n" +
+                "[02:07.41][00:46.06]树叶一层层拨开了伪装\n" +
+                "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";
+
+            //通过正则拆分的字幕arr
+            var resultArr = parseLyric(lrcText);
+
+            console.dir(resultArr);
+
+            audio.ontimeupdate = function(e) {
+                //遍历所有歌词，看哪句歌词的时间与当然时间吻合
+                for (var i = 0, l = resultArr.length; i < l; i++) {
+                    if (this.currentTime /*当前播放的时间*/ > resultArr[i][0]) {
+                        //显示到页面
+    //                    lyricContainer.textContent = resultArr[i][1];
+                        $("#lyricContainer").html(resultArr[i][1]);
+                    };
+                };
+            };
+        }
+
+
     $(".videoBtn").click(function () {
         if ($(this).hasClass("buttonOpen")) {
             $(this).removeClass("buttonOpen").addClass("buttonOff");
