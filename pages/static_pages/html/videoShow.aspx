@@ -219,8 +219,8 @@
             //通过正则拆分的字幕arr
             var resultArr = parseLyric(lrcText);
 
-            console.dir(resultArr);
-
+            //console.dir(resultArr);
+            var html = "";
             audio.ontimeupdate = function(e) {
                 //遍历所有歌词，看哪句歌词的时间与当然时间吻合
                 for (var i = 0, l = resultArr.length; i < l; i++) {
@@ -228,6 +228,10 @@
                         //显示到页面
     //                    lyricContainer.textContent = resultArr[i][1];
                         $("#lyricContainer").html(resultArr[i][1]);
+                        if (html.indexOf(resultArr[i][1]) == -1){
+                            html = html + resultArr[i][1] + "<br/>";
+                            $("#lyricContainer").html(html);
+                        }
                     };
                 };
             };
