@@ -227,7 +227,7 @@
                     if (this.currentTime /*当前播放的时间*/ > resultArr[i][0]) {
                         //显示到页面
     //                    lyricContainer.textContent = resultArr[i][1];
-                        $("#lyricContainer").html(resultArr[i][1]);
+                        //$("#lyricContainer").html(resultArr[i][1]);
                         if (html.indexOf(resultArr[i][1]) == -1){
                             html = html + resultArr[i][1] + "<br/>";
                             $("#lyricContainer").html(html);
