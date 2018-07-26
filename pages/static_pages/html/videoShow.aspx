@@ -135,6 +135,7 @@
     <div rel="tab-4" class="content">
         <div class="container handout">
             <div class="blog-header">
+            	  <div id="ktxi0"
                 <h3>Andersen's Fairy Tale -chapter 10 -知识点总结</h3>
                 <h4>2018-07-15 Eason 薄荷阅读MintReading</h4>
                 <h4 class="narration">
@@ -142,7 +143,7 @@
                 <audio src="../img/video/ai_xiao_de_yan_jing.mp3" controls="controls">
                     Your browser does not support the audio element.
                 </audio>
-
+              </div>
                 <div class="handoutKw">
                     <h3 class="text-center">—重点单词—</h3>
                     <div id="zddc0"></div>
