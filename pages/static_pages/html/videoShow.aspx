@@ -135,14 +135,14 @@
     <div rel="tab-4" class="content">
         <div class="container handout">
             <div class="blog-header">
-            	  <div id="ktxi0"
-                <h3>Andersen's Fairy Tale -chapter 10 -知识点总结</h3>
+            	  <div id="ktxi0">
+               <!-- <h3>Andersen's Fairy Tale -chapter 10 -知识点总结</h3>
                 <h4>2018-07-15 Eason 薄荷阅读MintReading</h4>
                 <h4 class="narration">
                     薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading薄荷阅读MintReading</h4>
                 <audio src="../img/video/ai_xiao_de_yan_jing.mp3" controls="controls">
                     Your browser does not support the audio element.
-                </audio>
+                </audio>-->
               </div>
                 <div class="handoutKw">
                     <h3 class="text-center">—重点单词—</h3>
@@ -379,6 +379,7 @@
             success: function (data) {
                 if (data.status == 0) {
                     if (data.handouts.length > 0) {
+                    	  var ktxi = new Array();
                         var zddc = new Array();
                         var ysdc = new Array();
                         var jrdy = new Array();
@@ -388,7 +389,10 @@
                         var bqsm = new Array();
                         var mryj = new Array();
                         for (var i = 0; i < data.handouts.length; i++) {
-                            if (data.handouts[i].type == "重点单词") {
+                        	  if (data.handouts[i].type == "开头信息") {
+                                ktxi.push(data.handouts[i]);
+                            } 
+                            else if (data.handouts[i].type == "重点单词") {
                                 zddc.push(data.handouts[i]);
                             } else if (data.handouts[i].type == "引申单词") {
                                 ysdc.push(data.handouts[i]);
@@ -406,6 +410,7 @@
                                 mryj.push(data.handouts[i]);
                             }
                         }
+                        innktxi(ktxi);
                         innzddc(zddc);
                         innysdc(ysdc);
                         innjrdy(jrdy);
@@ -422,6 +427,22 @@
         });
     }
 
+    function innktxi(o){
+         if (o.length > 0) {
+            var html = "";
+            var j = 1;
+            for (var i = 0; i < o.length; i++) {
+                if (o[i].medias[0].type == "audio") {
+                        html = html + "<audio src='" + o[i].medias[0].media_url + "' controls='controls'>Your browser does not support the audio element.</audio>";
+                    }
+                } else {
+                      html = html + "<div>" + o[i].english_content + o[i].chinese_content + "</div>";
+                    j++;
+                }
+            }
+            $("#ktxi0").html(html);
+        }   	   	
+    }
 
     function innzddc(o) {
         if (o.length > 0) {
@@ -429,7 +450,7 @@
             var j = 1;
             for (var i = 0; i < o.length; i++) {
                 if (o[i].medias.length > 0) {
-                    if (o[i].medias[0].type == "picture") {
+                    if (o[i].medias[0].type == "audio") {
                         html = html + "<img src='" + o[i].medias[0].media_url + "' class='img-responsive' alt='Responsive image'>";
                     }
                 } else {
