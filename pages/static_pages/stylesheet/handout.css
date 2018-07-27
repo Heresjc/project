@@ -36,10 +36,11 @@ body{
 }
 .handout .kwExplain .kwExStart{
     color: #99ccff;
-    font-style:normal
+    font-style:normal;
+    font-weight:bold;
 }
 .handout .kwExplain .thisWord{
-    color: #44ba80;
+    color: #99ccff;
     font-style:italic
 }
 
