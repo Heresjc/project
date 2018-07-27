@@ -16,7 +16,7 @@ body{
 }
 .handout .keywords .keyword,
 .handout .handoutEw .keyword{
-    color: #44ba80;
+    color: #99ffcc;
     font-weight:bold;
 }
 .handout .kwExplain{
@@ -29,7 +29,7 @@ body{
     text-decoration: underline
 }
 .handout .kwExplain .kwExStart{
-    color: #44ba80;
+    color: #99ffcc;
     font-style:normal
 }
 .handout .kwExplain .thisWord{
