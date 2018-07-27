@@ -35,9 +35,9 @@ body{
     text-decoration: underline
 }
 .handout .kwExplain .kwExStart{
-    color: #99ccff;
+    color: #333;
     font-style:normal;
-    font-weight:bold;
+    /*font-weight:bold;*/
 }
 .handout .kwExplain .thisWord{
     color: #99ccff;
