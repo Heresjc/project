@@ -5,6 +5,12 @@ body{
     background-color: #a397e2;
     margin-bottom: 0 ;
 }
+.selfrow {
+	  font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: -2%;
+}
 .handout a{
     color: #fff;
 }
@@ -12,7 +18,7 @@ body{
     color: #7777e2;
 }
 .handout .keywords{
-    color: #161318;
+    color: #99ccff;
 }
 .handout .keywords .keyword,
 .handout .handoutEw .keyword{
