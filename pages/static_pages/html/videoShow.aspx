@@ -166,7 +166,7 @@
                     <div id="dhimgdiv"></div>
                 </div>
                 <div class="handoutPic">
-                    <h3 class="text-center ">—引申知识的讲解—</h3>
+                    <h3 class="text-center ">—引申知识讲解—</h3>
                     <div id="yszsjj0"></div>
                     <div id="ysimgdiv"></div>
                 </div>
@@ -418,7 +418,7 @@
                                 zdjx.push(data.handouts[i]);
                             } else if (data.handouts[i].type == "对话中文翻译") {
                                 dhzwfy.push(data.handouts[i]);
-                            } else if (data.handouts[i].type == "引申知识的讲解") {
+                            } else if (data.handouts[i].type == "引申知识讲解") {
                                 yszsjj.push(data.handouts[i]);
                             }else if (data.handouts[i].type == "版权声明") {
                                 bqsm.push(data.handouts[i]);
@@ -577,13 +577,16 @@
                     }
                 } else {
                     if (o[i].english_content.length>0 && o[i].chinese_content.length>0){
-                        html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                        html = html + "<div>"  + o[i].english_content + "" + o[i].chinese_content + "</div>";
+                        //html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
                         j++;
                     }else if (o[i].english_content.length == 0){
-                        html = html + "<div>" + j + "." + o[i].chinese_content + "</div>";
+                        html = html + "<div>" + o[i].chinese_content + "</div>";
+                        //html = html + "<div>" + j + "." + o[i].chinese_content + "</div>";
                         j++;
                     }else if (o[i].chinese_content.length == 0){
-                        html = html + "<div>" + j + "." + o[i].english_content + "</div>";
+                        html = html + "<div>" + o[i].english_content + "</div>";
+                        //html = html + "<div>" + j + "." + o[i].english_content + "</div>";
                         j++;
                     }
                 }
