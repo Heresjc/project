@@ -233,9 +233,9 @@ body {
 }
 
 h3.copyright {
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #ccc;
 }
 
 .vdoSubtitle {
