@@ -48,7 +48,8 @@
     		height: 200px;
     	}
     	.change {
-    		margin-top: 50px;
+    		/*margin-top: 50px;*/
+    		margin-top: 18%;
     		position: absolute;
     		top: 0;
     		right:0;
