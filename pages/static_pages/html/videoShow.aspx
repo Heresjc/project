@@ -602,10 +602,10 @@
                         html = html + "<img src='" + o[i].medias[0].media_url + "' class='img-responsive' alt='Responsive image'>";
                     }
                 } else {
-                    if (o[i].english_content.length>0){
-                        html = html + "<div>" + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                    if (o[i].english_content.length>0&&o[i].chinese_content.length>0){
+                        html = html + "<div>" + o[i].english_content + "" + o[i].chinese_content + "</div>";
                     }else{
-                        html = html + "<div>" + o[i].chinese_content + "</div>";
+                        html = html + "<div>" + o[i].english_content + "</div>";
                     }
                 }
             }
