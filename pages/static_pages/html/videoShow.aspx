@@ -48,10 +48,9 @@
     		height: 200px;
     	}
     	.change {
-    		/*margin-top: 50px;*/
-    		margin-top: 18%;
+    		/*margin-top: 50px;*/	
     		position: absolute;
-    		top: 0;
+    		top: 430px;
     		right:0;
     		left:0;
     		text-align: center;
@@ -115,8 +114,8 @@
             </div>
         </div>
         <div class="change">
-        		<a id="url1" class="set">视频源１</a>
-        		<a id="url2">视频源２</a>
+        		<a id="url1" class="set">无字幕</a>
+        		<a id="url2">英文字幕</a>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
