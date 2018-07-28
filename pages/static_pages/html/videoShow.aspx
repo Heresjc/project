@@ -549,10 +549,12 @@
                     }
                 } else {
                     if (o[i].english_content.length > 3) {
-                        html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                        //html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                        html = html + "<div>" +  o[i].english_content + "</div>";
                         j++;
                     } else {
-                        html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                        //html = html + "<div>" + j + "." + o[i].english_content + ":" + o[i].chinese_content + "</div>";
+                        html = html + "<div>" + o[i].english_content + "</div>";
                         j++;
                     }
                 }
