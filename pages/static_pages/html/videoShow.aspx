@@ -86,17 +86,18 @@
     		right: 10px;
     	}
     </style>
+    
 </head>
 <body>
 <div id="tabdemo">
     <ul class="videohrT">
-        <li rel="tab-1" class="vtitle">背景</li>
+        <li rel="tab-1" class="vtitle" onclick="log_user_activity(event)" log-id="背景"  >背景</li>
         <li class="list"></li>
-        <li rel="tab-2" class="vtitle">视频</li>
+        <li rel="tab-2" class="vtitle" onclick="log_user_activity(event)" log-id="视频"   >视频</li>
         <li class="list"></li>
-        <li rel="tab-3" class="vtitle">音频</li>
+        <li rel="tab-3" class="vtitle"  onclick="log_user_activity(event)" log-id="音频"  >音频</li>
         <li class="list"></li>
-        <li rel="tab-4" class="vtitle">讲义</li>
+        <li rel="tab-4" class="vtitle"  onclick="log_user_activity(event)" log-id="讲义" >讲义</li>
     </ul>
     <div rel="tab-1" class="content">
         <div class="box" id="box"></div>
@@ -189,9 +190,12 @@
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
-
+<script type="text/javascript"src="../js/log_user_activity.js" ></script>
 <script type="text/javascript">
 
+    var user_token = "<%=userToken%>";
+
+    
     /*=====================================字幕滚动start=======================*/
         var audio;
         window.onload = function(){
