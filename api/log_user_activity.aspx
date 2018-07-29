@@ -12,7 +12,7 @@
             {
                 DBHelper.InsertData("user_activity_log", new string[,] {
                     {"open_id", "varchar", openId.Trim() },
-                    {"time_stamp", "int",timeStamp.ToString() },
+                    {"time_stamp", "bigint",timeStamp.ToString() },
                     {"log_id", "varchar", logId.Trim() },
                     {"type", "varchar", type.Trim() }
                 });
