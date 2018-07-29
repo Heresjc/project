@@ -5,7 +5,7 @@
         string openId = WeixinUser.CheckToken(Util.GetSafeRequestValue(Request,"usertoken",""));
         string type = Util.GetSafeRequestValue(Request, "type", "");
         string logId = Util.GetSafeRequestValue(Request, "logid", "");
-        int timeStamp = int.Parse(Util.GetSafeRequestValue(Request, "logid", "0").Trim());
+        int timeStamp = int.Parse(Util.GetSafeRequestValue(Request, "timestamp", "0").Trim());
         if (!openId.Trim().Equals("") && !type.Trim().Equals("") && !logId.Trim().Equals("") && timeStamp > 0)
         {
             try
