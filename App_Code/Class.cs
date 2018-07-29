@@ -43,7 +43,7 @@ public class Class:ObjectHelper
             new KeyValuePair<SqlDbType, object>(SqlDbType.Int, _fields["id"].ToString().Trim()));
         parameters[1] = new KeyValuePair<string, KeyValuePair<SqlDbType, object>>("weixin_open_id",
             new KeyValuePair<SqlDbType, object>(SqlDbType.VarChar, openId));
-        int i = DBHelper.DeleteData("class_regist", parameters);
+        int i = DBHelper.DeleteData("class_regist", parameters, Util.conStr.Trim());
         if (i == 1)
             return true;
         else
