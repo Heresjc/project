@@ -114,7 +114,7 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='video_1'
+                    <video id='video_1' controls='false'
                            controlslist='nodownload' preload="auto" webkit-playsinline playsinline></video>
                     <input id="video_2" type="hidden" value=""/>
                     <input id="video_3" type="hidden" value=""/>
