@@ -108,7 +108,7 @@
             <div class="video">
                 <div class="zy_media" id="vvv">
                     <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true'
-                           controlslist='nodownload' preload="auto" webkit-playsinline playsinline></video>
+                           controlslist='nodownload nofullscreen' preload="auto" webkit-playsinline playsinline></video>
                     <input id="video_2" type="hidden" value=""/>
                     <input id="video_3" type="hidden" value=""/>
                 </div>
