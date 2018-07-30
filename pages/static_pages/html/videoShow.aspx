@@ -136,7 +136,7 @@
         </div>
         <div class="vdoSub row" style="margin:0px;border-top: 4px solid #ccc;">       	  
         	  <div class="col-xs-6" style="float:left;padding-right:0px;line-height:40px">
-        	  	<span style="display: inline-block;padding: 0 10px;">Speed:</span>
+        	  	<span style="display: inline-block;padding: 0 10px;">Speed :</span>
         	  	<span style="display: inline-block;margin:0 5px;padding: 2px 10px;border: 2px solid #ccc;border-radius: 100%;">常</span>
         	  	<span style="display: inline-block;margin:0 5px;padding: 2px 10px;border: 2px solid #ccc;border-radius: 100%;">快</span>
         	  </div>
