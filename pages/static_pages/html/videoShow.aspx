@@ -128,7 +128,7 @@
             </div>
         </div>
         <div class="vdoSub">
-            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls" id="audioUrl">
+            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controlsList="nodownload" controls="controls" id="audioUrl">
                 Your browser does not support the audio element.
             </audio>
         </div>
