@@ -92,6 +92,11 @@
       audio::-webkit-media-controls-mute-button {
       display:none;
       }
+      
+      video::-webkit-media-controls-fullscreen-button {
+      display: none;
+      }
+
     </style>
     
 </head>
