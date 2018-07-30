@@ -140,7 +140,7 @@
         	  	<span style="display: inline-block;margin:0 5px;padding: 2px 10px;border: 2px solid #ccc;border-radius: 100%;">常</span>
         	  	<span style="display: inline-block;margin:0 5px;padding: 2px 10px;border: 2px solid #ccc;border-radius: 100%;">快</span>
         	  </div>
-        	  <div class="col-xs-6" style="padding:0px">
+        	  <div class="col-xs-6" style="float:left;padding:0px;line-height:40px">
             <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controlsList="nodownload" controls="controls" id="audioUrl">
                 Your browser does not support the audio element.
             </audio>
