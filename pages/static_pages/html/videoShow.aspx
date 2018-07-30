@@ -454,7 +454,7 @@
             for (var i = 0; i < o.length; i++) {
             	 if (o[i].medias.length > 0) {
                 if (o[i].medias[0].type == "audio") {
-                        html = html + "<div style='text-align:center'><audio src='" + o[i].medias[0].media_url + "' controls='controls'>Your browser does not support the audio element.</audio></div>";
+                        html = html + "<div style='text-align:center'><audio src='" + o[i].medias[0].media_url + "' controlsList='nodownload' controls='controls'>Your browser does not support the audio element.</audio></div>";
                   }
                 } else {
                       html = html + "<div>" + o[i].english_content + o[i].chinese_content + "</div>";
