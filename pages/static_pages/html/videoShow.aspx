@@ -85,6 +85,13 @@
     		bottom: 30px;
     		right: 10px;
     	}
+    	audio::-webkit-media-controls-volume-slider {
+      display:none;
+      }
+
+      audio::-webkit-media-controls-mute-button {
+      display:none;
+      }
     </style>
     
 </head>
