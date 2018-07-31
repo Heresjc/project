@@ -44,8 +44,11 @@
     		text-align:center;
     	}
     	.videoCnt .video {
-    		margin-top: 40px;
-    		height: 200px;
+    		/*margin-top: 40px;
+    		height: 200px;*/
+    		margin-top:0px;
+    		height:228px;
+    		overflow:hidden;
     	}
     	.change {
     		/*margin-top: 50px;*/	
