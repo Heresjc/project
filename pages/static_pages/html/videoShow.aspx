@@ -113,12 +113,15 @@
         <div class="videoCnt">
             <h1 class="videoCntName"></h1>
             <div class="video">
-                <div class="zy_media" id="vvv">
-                    <video id='video_1' controls='false'
-                           controlslist='nodownload' preload="auto" webkit-playsinline playsinline></video>
+                <!--div class="zy_media" id="vvv"-->
+                    <!--video id='video_1' controls='false'
+                           controlslist='nodownload' preload="auto" webkit-playsinline playsinline>                           
+                    </video-->
+                    <video id="video_1" width="100%" poster="../img/curAdu/aduImg.jpg" preload width="100%" controls webkit-playsinline>
+                    </video>      
                     <input id="video_2" type="hidden" value=""/>
                     <input id="video_3" type="hidden" value=""/>
-                </div>
+                <!--/div-->
             </div>
         </div>
         <div class="change">
