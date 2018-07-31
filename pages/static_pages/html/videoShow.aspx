@@ -44,8 +44,8 @@
     		text-align:center;
     	}
     	.videoCnt .video {
-    		/*margin-top: 40px;
-    		height: 200px;*/
+    		margin-top: 40px;
+    		height: 200px;
     	}
     	.change {
     		/*margin-top: 50px;*/	
@@ -114,8 +114,8 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='video_1'
-                           controlslist='nodownload' preload="auto" webkit-playsinline playsinline></video>
+                    <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true'
+                           controlslist='nodownload nofullscreen' preload="auto" webkit-playsinline playsinline></video>
                     <input id="video_2" type="hidden" value=""/>
                     <input id="video_3" type="hidden" value=""/>
                 </div>
