@@ -127,8 +127,10 @@
         </div>
         <div class="change">
         		<!--a id="url1" class="set">无字幕</a>
-        		<a id="url2">英文字幕</a-->       		
-            <input type="checkbox" name="vzm_checkbox" data-size="mini" data-on-text="字幕关" data-on-text="字幕开" data-on-color="primary" checked>           
+        		<a id="url2">英文字幕</a-->    
+        		<div class="switch switch-mini">   		
+            <input type="checkbox" name="vzm_checkbox" data-size="mini" data-on-text="字幕关" data-off-text="字幕开" data-on-color="primary" checked>           
+            </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
