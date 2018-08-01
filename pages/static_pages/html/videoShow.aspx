@@ -127,10 +127,8 @@
         </div>
         <div class="change">
         		<!--a id="url1" class="set">无字幕</a>
-        		<a id="url2">英文字幕</a-->
-        		<div class="switch" data-on="primary" data-off="info">
-                  <input type="checkbox" checked />
-            </div>
+        		<a id="url2">英文字幕</a-->       		
+            <input type="checkbox" name="vzm_checkbox" checked>           
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
@@ -211,7 +209,6 @@
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 <script src="../js/bootstrap-switch.min.js"></script>
 <script type="text/javascript"src="../js/log_user_activity.js" ></script>
 <script type="text/javascript">
@@ -374,6 +371,9 @@
     })
 
     $(document).ready(function () {
+    	      //初始乎字幕切换按钮
+    	      $("[name='vzm_checkbox']").bootstrapSwitch();
+    	
             var storage = window.localStorage;
             //视频URL
             var media_url = storage.getItem("media_url");
