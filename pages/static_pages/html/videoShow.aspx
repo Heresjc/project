@@ -122,7 +122,7 @@
         		<!--a id="url1" class="set">无字幕</a>
         		<a id="url2">英文字幕</a-->    
         		<div class="switch switch-mini">   		
-            <input type="checkbox" name="vzm_checkbox" data-on-text="字幕开" data-off-text="字幕关" data-on-color="primary" data-off-color="success"　checked>           
+            <input type="checkbox" name="vzm_checkbox" data-size="mini" data-on-text="字幕开" data-off-text="字幕关" data-on-color="primary" data-off-color="success"　checked>           
             </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
@@ -146,7 +146,7 @@
         		<!--a id="url1" class="set">无字幕</a>
         		<a id="url2">英文字幕</a-->    
         		<div class="switch switch-mini">   		
-            <input type="checkbox" name="azm_checkbox" data-on-text="语速慢" data-off-text="语速正常" data-on-color="primary" data-off-color="success"　checked>           
+            <input type="checkbox" name="azm_checkbox" data-size="mini" data-on-text="语速慢" data-off-text="语速正常" data-on-color="primary" data-off-color="success"　checked>           
             </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
@@ -372,14 +372,14 @@
     $(document).ready(function () {
     	      //初始化视频字幕切换按钮
     	      $("[name='vzm_checkbox']").bootstrapSwitch({
-    	      	size:"mini",
+    	      	//size:"mini",
 							onSwitchChange:function(event,state){
 								changeVideo();  	      	
 							}
     	      });
             //初始化音频字幕切换按钮
     	      $("[name='azm_checkbox']").bootstrapSwitch({
-    	      	size:"mini",
+    	      	//size:"mini",
 							onSwitchChange:function(event,state){
 									      	
 							}
