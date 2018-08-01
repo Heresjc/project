@@ -378,6 +378,7 @@
     	      	size:"small",
 							onSwitchChange:function(event,state){
 								changeVideo();  	      	
+							}
     	      });
     	
             var storage = window.localStorage;
