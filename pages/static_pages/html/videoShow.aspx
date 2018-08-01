@@ -48,7 +48,7 @@
     		/*margin-top: 40px;
     		height: 200px;*/
     		margin-top:0px;
-    		height:100%;
+    		height:228px;
     		overflow:hidden;
     	}
     	.change {
@@ -116,7 +116,7 @@
         <div class="videoCnt">
             <h1 class="videoCntName"></h1>
             <div class="video">
-                <div class="zy_media" id="vvv" style="position:unset">
+                <div class="zy_media" id="vvv">
                     <video id='video_1' poster="../img/curAdu/aduImg.jpg"  controls='true'
                            controlslist='nodownload nofullscreen' preload="auto" webkit-playsinline playsinline></video>
                     <input id="video_2" type="hidden" value=""/>
