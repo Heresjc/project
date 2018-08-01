@@ -375,7 +375,7 @@
     $(document).ready(function () {
     	      //初始乎字幕切换按钮
     	      $("[name='vzm_checkbox']").bootstrapSwitch({
-    	      	size:"small",
+    	      	size:"mini",
 							onSwitchChange:function(event,state){
 								changeVideo();  	      	
 							}
