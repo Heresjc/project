@@ -60,7 +60,7 @@
     		/*right:0;*/
     		left:0;
     		text-align: right;
-    		z-index:999999999;
+    		z-index:9999999999 !important;
     	}
     	.change a {
     		display: inline-block;
