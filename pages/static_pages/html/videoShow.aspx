@@ -54,10 +54,13 @@
     	.change {
     		/*margin-top: 50px;*/	
     		position: absolute;
-    		top: 430px;
-    		right:0;
+    		/*top: 430px;*/
+    		top:10%;
+    		right:5%;
+    		/*right:0;*/
     		left:0;
-    		text-align: center;
+    		text-align: right;
+    		z-index:999999999;
     	}
     	.change a {
     		display: inline-block;
@@ -109,7 +112,7 @@
     <div rel="tab-1" class="content">
         <div class="box" id="box"></div>
     </div>
-    <div rel="tab-2" class="content">
+    <div rel="tab-2" class="content" style="position: relative;">
         <div class="videoCnt">
             <h1 class="videoCntName"></h1>
             <div class="video">
