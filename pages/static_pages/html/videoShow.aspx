@@ -89,6 +89,9 @@
     		bottom: 30px;
     		right: 10px;
     	}
+    	.bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-label{
+    		padding:0;
+    	}
     </style>
     
 </head>
@@ -146,7 +149,7 @@
         		<!--a id="url1" class="set">无字幕</a>
         		<a id="url2">英文字幕</a-->    
         		<div class="switch switch-mini">   		
-            <input type="checkbox" name="azm_checkbox" data-size="mini" data-on-text="语速慢" data-off-text="语速正常" data-on-color="primary" data-off-color="success"　checked>           
+            <input type="checkbox" name="azm_checkbox" data-size="mini" data-on-text="语速慢" data-off-text="语速正" data-on-color="primary" data-off-color="success"　checked>           
             </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
