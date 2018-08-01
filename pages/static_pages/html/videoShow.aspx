@@ -89,13 +89,6 @@
     		bottom: 30px;
     		right: 10px;
     	}
-    	audio::-webkit-media-controls-volume-slider {
-      display:none;
-      }
-
-      audio::-webkit-media-controls-mute-button {
-      display:none;
-      }
     </style>
     
 </head>
@@ -142,12 +135,7 @@
             </div>
         </div>
         <div class="vdoSub row" style="margin:0px;border-top: 4px solid #ccc;">       	  
-        	  <div class="col-xs-6" style="float:left;padding-right:0px;line-height:40px">
-        	  	<span style="display: inline-block;padding:0px;">Speed :</span>
-        	  	<span style="display: inline-block;margin:2px 5px;padding: 0px 10px;border: 2px solid #ccc;border-radius: 100%;">常</span>
-        	  	<span style="display: inline-block;margin:2px 5px;padding: 0px 10px;border: 2px solid #ccc;border-radius: 100%;">快</span>
-        	  </div>
-        	  <div class="col-xs-6" style="float:left;padding:0px;line-height:40px">
+        	  <div class="col-xs-12" style="float:left;padding:0px;line-height:40px">
             <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controlsList="nodownload" controls="controls" id="audioUrl" style="position: relative;overflow: hidden;">
                 Your browser does not support the audio element.
             </audio>
