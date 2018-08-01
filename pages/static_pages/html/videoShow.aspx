@@ -90,7 +90,7 @@
     		right: 10px;
     	}
     	.bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-label{
-    		padding:0;
+    		padding:0 !important;
     	}
     </style>
     
