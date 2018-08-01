@@ -401,7 +401,7 @@
             
             //监听字幕切换           
 						$('input[name="vzm_checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
-                       changeVideo();
+                       //changeVideo();
 						});
         });
 
