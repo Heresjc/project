@@ -129,7 +129,7 @@
         		<!--a id="url1" class="set">无字幕</a>
         		<a id="url2">英文字幕</a-->    
         		<div class="switch switch-mini">   		
-            <input type="checkbox" name="vzm_checkbox" data-size="mini" data-on-text="字幕开" data-off-text="字幕关" data-on-color="primary" data-off-color="success"　checked>           
+            <input type="checkbox" name="vzm_checkbox" data-on-text="字幕开" data-off-text="字幕关" data-on-color="primary" data-off-color="success"　checked>           
             </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
@@ -374,7 +374,11 @@
 
     $(document).ready(function () {
     	      //初始乎字幕切换按钮
-    	      $("[name='vzm_checkbox']").bootstrapSwitch();
+    	      $("[name='vzm_checkbox']").bootstrapSwitch({
+    	      	size:"small",
+							onSwitchChange:function(event,state){
+								changeVideo();  	      	
+    	      });
     	
             var storage = window.localStorage;
             //视频URL
@@ -399,10 +403,6 @@
             var short_content = storage.getItem("short_content");
             $("#box").html("<div>" + short_content + "</div>");
             
-            //监听字幕切换           
-						$('input[name="vzm_checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
-                       //changeVideo();
-						});
         });
 
     function getRootPath() {
