@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheet/bootstrap-switch.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
     <style>
@@ -125,8 +126,11 @@
             </div>
         </div>
         <div class="change">
-        		<a id="url1" class="set">无字幕</a>
-        		<a id="url2">英文字幕</a>
+        		<!--a id="url1" class="set">无字幕</a>
+        		<a id="url2">英文字幕</a-->
+        		<div class="switch" data-on="primary" data-off="info">
+                  <input type="checkbox" checked />
+            </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
@@ -207,6 +211,7 @@
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
+<script src="../js/bootstrap-switch.min.js"></script>
 <script type="text/javascript"src="../js/log_user_activity.js" ></script>
 <script type="text/javascript">
 
