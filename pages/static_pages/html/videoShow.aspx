@@ -141,6 +141,15 @@
             </audio>
             </div>
         </div>
+        
+        <div class="change">
+        		<!--a id="url1" class="set">无字幕</a>
+        		<a id="url2">英文字幕</a-->    
+        		<div class="switch switch-mini">   		
+            <input type="checkbox" name="azm_checkbox" data-on-text="语速慢" data-off-text="语速正常" data-on-color="primary" data-off-color="success"　checked>           
+            </div>
+            <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
+        </div>
     </div>
     <div rel="tab-4" class="content">
         <div class="container handout">
@@ -361,14 +370,21 @@
     })
 
     $(document).ready(function () {
-    	      //初始乎字幕切换按钮
+    	      //初始化视频字幕切换按钮
     	      $("[name='vzm_checkbox']").bootstrapSwitch({
     	      	size:"mini",
 							onSwitchChange:function(event,state){
 								changeVideo();  	      	
 							}
     	      });
-    	
+            //初始化音频字幕切换按钮
+    	      $("[name='azm_checkbox']").bootstrapSwitch({
+    	      	size:"mini",
+							onSwitchChange:function(event,state){
+									      	
+							}
+    	      });
+    	          	
             var storage = window.localStorage;
             //视频URL
             var media_url = storage.getItem("media_url");
