@@ -109,10 +109,10 @@
         <li class="list"></li>
         <li rel="tab-4" class="vtitle"  onclick="log_user_activity(event)" log-id="讲义" >讲义</li>
     </ul>
-    <div rel="tab-1" class="content" style="position: relative;">
+    <div rel="tab-1" class="content">
         <div class="box" id="box"></div>
     </div>
-    <div rel="tab-2" class="content" style="position: relative;">
+    <div rel="tab-2" class="content">
         <div class="videoCnt">
             <h1 class="videoCntName"></h1>
             <div class="video">
@@ -133,7 +133,7 @@
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
-    <div rel="tab-3" class="content" style="position: relative;">
+    <div rel="tab-3" class="content">
         <div class="vdoSubtitle">
             <div class="vdoSubtle">
                 <div id="lyricContainer"></div>
@@ -157,7 +157,7 @@
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
-    <div rel="tab-4" class="content" style="position: relative;">
+    <div rel="tab-4" class="content">
         <div class="container handout">
             <div class="blog-header">
             	  <div id="ktxi0">
