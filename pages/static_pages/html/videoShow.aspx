@@ -211,6 +211,7 @@
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/bootstrap-switch.min.js"></script>
 <script type="text/javascript"src="../js/log_user_activity.js" ></script>
 <script type="text/javascript">
