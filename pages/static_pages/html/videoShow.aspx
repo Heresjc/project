@@ -47,16 +47,17 @@
     	.videoCnt .video {
     		/*margin-top: 40px;
     		height: 200px;*/
-    		margin-top:0px;
-    		height:228px;
+    		margin-top:13%;
+    		height:250px;
     		overflow:hidden;
+    		position:relative;
     	}
     	.change {
     		/*margin-top: 50px;*/	
     		position: fixed;
     		/*top: 430px;*/
     		top:10%;
-    		right:5%;
+    		right:3%;
     		/*right:0;*/
     		left:0;
     		text-align: right;
