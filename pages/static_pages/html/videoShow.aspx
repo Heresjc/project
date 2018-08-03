@@ -297,7 +297,7 @@
             //向服务器发送请求
             request.send();*/
             
-            lyric=$.ajax({url:url,dataType:'jsonp',async:false}); 
+            lyric=$.ajax({url:url,async:false}); 
             
             
             return lyric.responseText;
