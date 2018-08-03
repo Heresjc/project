@@ -282,7 +282,7 @@
         }
 
         function getLyric(url) {
-        	  var lyric="";
+        	  var lyric;
             //建立一个XMLHttpRequest请求
             var request = new XMLHttpRequest();
             //配置, url为歌词地址，比如：'./content/songs/foo.lrc'
@@ -297,7 +297,10 @@
             //向服务器发送请求
             request.send();
             
-            return lyric;
+            lyric=$.ajax({url:url,dataType:'jsonp',async:false}); /
+            
+            
+            return lyric.responseText;
         }
 
 
