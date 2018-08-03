@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../stylesheet/video.css"/>
     <link rel="stylesheet" href="../stylesheet/frozen.css"/>
     <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheet/bootstrap-switch.min.css">
     <link rel="stylesheet" href="../stylesheet/handout.css">
     <link rel="stylesheet" href="../stylesheet/zy.media.min.css">
     <style>
@@ -44,16 +45,23 @@
     		text-align:center;
     	}
     	.videoCnt .video {
-    		margin-top: 40px;
-    		height: 200px;
+    		/*margin-top: 40px;
+    		height: 200px;*/
+    		margin-top:13%;
+    		height:250px;
+    		overflow:hidden;
+    		position:relative;
     	}
     	.change {
     		/*margin-top: 50px;*/	
-    		position: absolute;
-    		top: 430px;
-    		right:0;
+    		position: fixed;
+    		/*top: 430px;*/
+    		top:10%;
+    		right:3%;
+    		/*right:0;*/
     		left:0;
-    		text-align: center;
+    		text-align: right;
+    		z-index:9999999999 !important;
     	}
     	.change a {
     		display: inline-block;
@@ -85,6 +93,9 @@
     		bottom: 30px;
     		right: 10px;
     	}
+    	.bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-label{
+    		padding:0 !important;
+    	}
     </style>
     
 </head>
@@ -107,16 +118,19 @@
             <h1 class="videoCntName"></h1>
             <div class="video">
                 <div class="zy_media" id="vvv">
-                    <video id='video_1' poster="../img/curAdu/aduImg.jpg" src='' controls='true'
-                           controlslist='nodownload' preload="auto" webkit-playsinline playsinline></video>
+                    <video id='video_1' poster="../img/curAdu/aduImg.jpg"  controls='true'
+                           controlslist='nodownload nofullscreen' preload="auto" webkit-playsinline playsinline></video>
                     <input id="video_2" type="hidden" value=""/>
                     <input id="video_3" type="hidden" value=""/>
                 </div>
             </div>
         </div>
         <div class="change">
-        		<a id="url1" class="set">无字幕</a>
-        		<a id="url2">英文字幕</a>
+        		<!--a id="url1" class="set">无字幕</a>
+        		<a id="url2">英文字幕</a-->    
+        		<div class="switch switch-mini">   		
+            <input type="checkbox" name="vzm_checkbox" data-size="mini" data-on-text="字幕开" data-off-text="字幕关" data-on-color="primary" data-off-color="success"　checked>           
+            </div>
             <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
@@ -127,10 +141,21 @@
                 <!--水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网-->
             </div>
         </div>
-        <div class="vdoSub">
-            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controls="controls" id="audioUrl">
+        <div class="vdoSub row" style="margin:0px;border-top: 4px solid #ccc;">       	  
+        	  <div class="col-xs-12" style="float:left;padding:0px;line-height:40px">
+            <audio src="../img/video/水边%20各种空灵鸟叫_爱给网_aigei_com.mp3" controlsList="nodownload" controls="controls" id="audioUrl" style="position: relative;overflow: hidden;">
                 Your browser does not support the audio element.
             </audio>
+            </div>
+        </div>
+        
+        <div class="change">
+        		<!--a id="url1" class="set">无字幕</a>
+        		<a id="url2">英文字幕</a-->    
+        		<div class="switch switch-mini">   		
+            <input type="checkbox" name="azm_checkbox" data-size="mini" data-on-text="语速慢" data-off-text="语速正" data-on-color="primary" data-off-color="success"　checked>           
+            </div>
+            <!-- <div class="buttonOpen videoBtn" onclick="changeVideo()"></div> -->
         </div>
     </div>
     <div rel="tab-4" class="content">
@@ -190,6 +215,7 @@
 </body>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/tabs.js"></script>
+<script src="../js/bootstrap-switch.min.js"></script>
 <script type="text/javascript"src="../js/log_user_activity.js" ></script>
 <script type="text/javascript">
 
@@ -200,12 +226,14 @@
         var audio;
         window.onload = function(){
             audio=document.getElementById("audioUrl");
-
-
+            var storage = window.localStorage;
+            //字幕URL
+            var audio_caption_file_url = storage.getItem("audio_caption_file_url");
+            
             //显示歌词的元素
             var lyricContainer = $("#lyricContainer");
             //获取lrc转换成的字幕文件的
-            var lrcText = "[00:00.17]庭竹 - 公主的天堂\n" +
+            /*var lrcText = "[00:00.17]庭竹 - 公主的天堂\n" +
                 "[00:05.40]作曲:陈嘉唯、Skot Suyama 陶山、庭竹\n" +
                 "[00:07.33]作词:庭竹\n" +
                 "[00:15.59]风铃的音谱 在耳边打转\n" +
@@ -218,8 +246,8 @@
                 "[01:59.65][00:38.35]她跳舞唱歌天真无邪地寻找属于自己的光亮和快乐\n" +
                 "[02:06.98][00:45.76]\n" +
                 "[02:07.41][00:46.06]树叶一层层拨开了伪装\n" +
-                "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";
-
+                "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";*/
+            var lrcText = getLyric(audio_caption_file_url);
             //通过正则拆分的字幕arr
             var resultArr = parseLyric(lrcText);
 
@@ -254,8 +282,9 @@
         }
 
         function getLyric(url) {
+        	  var lyric;
             //建立一个XMLHttpRequest请求
-            var request = new XMLHttpRequest();
+            /* var request = new XMLHttpRequest();
             //配置, url为歌词地址，比如：'./content/songs/foo.lrc'
             request.open('GET', url, true);
             //因为我们需要的歌词是纯文本形式的，所以设置返回类型为文本
@@ -263,10 +292,15 @@
             //一旦请求成功，但得到了想要的歌词了
             request.onload = function() {
                 //这里获得歌词文件
-                var lyric = request.response;
+            lyric = request.response;
             };
             //向服务器发送请求
-            request.send();
+            request.send();*/
+            
+            lyric=$.ajax({url:url,async:false}); 
+            
+            
+            return lyric.responseText;
         }
 
 
@@ -351,6 +385,21 @@
     })
 
     $(document).ready(function () {
+    	      //初始化视频字幕切换按钮
+    	      $("[name='vzm_checkbox']").bootstrapSwitch({
+    	      	//size:"mini",
+							onSwitchChange:function(event,state){
+								changeVideo();  	      	
+							}
+    	      });
+            //初始化音频字幕切换按钮
+    	      $("[name='azm_checkbox']").bootstrapSwitch({
+    	      	//size:"mini",
+							onSwitchChange:function(event,state){
+									      	
+							}
+    	      });
+    	          	
             var storage = window.localStorage;
             //视频URL
             var media_url = storage.getItem("media_url");
@@ -373,6 +422,7 @@
             var lessons_id = storage.getItem("lessons_id");
             var short_content = storage.getItem("short_content");
             $("#box").html("<div>" + short_content + "</div>");
+            
         });
 
     function getRootPath() {
@@ -454,7 +504,7 @@
             for (var i = 0; i < o.length; i++) {
             	 if (o[i].medias.length > 0) {
                 if (o[i].medias[0].type == "audio") {
-                        html = html + "<div style='text-align:center'><audio src='" + o[i].medias[0].media_url + "' controls='controls'>Your browser does not support the audio element.</audio></div>";
+                        html = html + "<div style='text-align:center'><audio src='" + o[i].medias[0].media_url + "' controlsList='nodownload' controls='controls'>Your browser does not support the audio element.</audio></div>";
                   }
                 } else {
                       html = html + "<div>" + o[i].english_content + o[i].chinese_content + "</div>";
