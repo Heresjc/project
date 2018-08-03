@@ -227,11 +227,13 @@
         window.onload = function(){
             audio=document.getElementById("audioUrl");
 
-
+            //字幕URL
+            var caption_file_url = storage.getItem("caption_file_url");
+            
             //显示歌词的元素
             var lyricContainer = $("#lyricContainer");
             //获取lrc转换成的字幕文件的
-            var lrcText = "[00:00.17]庭竹 - 公主的天堂\n" +
+            /*var lrcText = "[00:00.17]庭竹 - 公主的天堂\n" +
                 "[00:05.40]作曲:陈嘉唯、Skot Suyama 陶山、庭竹\n" +
                 "[00:07.33]作词:庭竹\n" +
                 "[00:15.59]风铃的音谱 在耳边打转\n" +
@@ -244,8 +246,8 @@
                 "[01:59.65][00:38.35]她跳舞唱歌天真无邪地寻找属于自己的光亮和快乐\n" +
                 "[02:06.98][00:45.76]\n" +
                 "[02:07.41][00:46.06]树叶一层层拨开了伪装\n" +
-                "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";
-
+                "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";*/
+            var lrcText = getLyric(caption_file_url);
             //通过正则拆分的字幕arr
             var resultArr = parseLyric(lrcText);
 
@@ -293,6 +295,8 @@
             };
             //向服务器发送请求
             request.send();
+            
+            return lyric;
         }
 
 
