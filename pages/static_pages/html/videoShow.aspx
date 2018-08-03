@@ -53,7 +53,7 @@
     	}
     	.change {
     		/*margin-top: 50px;*/	
-    		position: absolute;
+    		position: fixed;
     		/*top: 430px;*/
     		top:10%;
     		right:5%;
