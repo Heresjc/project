@@ -282,6 +282,7 @@
         }
 
         function getLyric(url) {
+        	  var lyric="";
             //建立一个XMLHttpRequest请求
             var request = new XMLHttpRequest();
             //配置, url为歌词地址，比如：'./content/songs/foo.lrc'
@@ -291,7 +292,7 @@
             //一旦请求成功，但得到了想要的歌词了
             request.onload = function() {
                 //这里获得歌词文件
-                var lyric = request.response;
+            lyric = request.response;
             };
             //向服务器发送请求
             request.send();
