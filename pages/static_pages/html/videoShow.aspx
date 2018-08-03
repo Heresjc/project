@@ -297,7 +297,7 @@
             //向服务器发送请求
             request.send();*/
             
-            lyric=$.ajax({url:url,dataType:"text",dataType:'jsonp',crossDomain:true,async:true}); 
+            lyric=$.ajax({url:url,dataType:"text",dataType:'jsonp',crossDomain:true,async:false}); 
             
             
             return lyric.responseText;
