@@ -226,7 +226,7 @@
         var audio;
         window.onload = function(){
             audio=document.getElementById("audioUrl");
-
+            var storage = window.localStorage;
             //字幕URL
             var caption_file_url = storage.getItem("caption_file_url");
             
