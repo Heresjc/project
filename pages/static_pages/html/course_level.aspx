@@ -304,13 +304,15 @@
                                         var caption_file_url;
                                         //音频路径
                                         var audioUrl;
-
+                                        //音频字幕路径
+                                        var audio_caption_file_url;
                                         for(var j = 0; j < data.lessons[i].medias.length ; j++){
                                             if(data.lessons[i].medias[j].type == "video"){
                                                 media_url = data.lessons[i].medias[j].media_url;
                                                 caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }else if (data.lessons[i].medias[j].type == "audio"){
                                                 audioUrl = data.lessons[i].medias[j].media_url;
+                                                audio_caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }
                                         }
 
@@ -318,7 +320,7 @@
                                         $("#caption_file_url" + flag).attr("value", caption_file_url);
                                         //为图片动态添加点击事件
                                         $("#head_image1").click(function () {
-                                            toVideo(lessons_id, media_url, caption_file_url, "img1", short_content , audioUrl);
+                                            toVideo(lessons_id, media_url, caption_file_url, "img1", short_content , audioUrl,audio_caption_file_url);
                                         });
                                     }
                                 }
@@ -432,13 +434,14 @@
      * @param b  视频URL
      * @param c  字幕URL
      */
-function toVideo(a, b, c, d, e , f) {
+function toVideo(a, b, c, d, e , f, g) {
         var storage = window.localStorage;
         storage.setItem("lessons_id", a);
         storage.setItem("media_url", b);
         storage.setItem("caption_file_url", c);
         storage.setItem("short_content", e);
         storage.setItem("audioUrl", f);
+        storage.setItem("audio_caption_file_url", g);
         //跳转到视频页面
 //        $("#" + d).attr("href", "video视频页面.html");
         $("#" + d).attr("href", "videoShow.aspx");
