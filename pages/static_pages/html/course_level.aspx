@@ -355,13 +355,15 @@
                                         var caption_file_url;
                                         //音频路径
                                         var audioUrl;
-
+                                        //音频字幕路径
+                                        var audio_caption_file_url;
                                         for(var j = 0; j < data.lessons[i].medias.length ; j++){
                                             if(data.lessons[i].medias[j].type == "video"){
                                                 media_url = data.lessons[i].medias[j].media_url;
                                                 caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }else if (data.lessons[i].medias[j].type == "audio"){
                                                 audioUrl = data.lessons[i].medias[j].media_url;
+                                                audio_caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }
                                         }
 
@@ -369,7 +371,7 @@
                                         $("#caption_file_url" + flag).attr("value", caption_file_url);
                                         //为图片动态添加点击事件
                                         $("#head_image2").click(function () {
-                                            toVideo(lessons_id, media_url, caption_file_url, "img2", short_content , audioUrl);
+                                            toVideo(lessons_id, media_url, caption_file_url, "img2", short_content , audioUrl,audio_caption_file_url);
                                         });
                                     }
                                 }
@@ -403,13 +405,15 @@
                                         var caption_file_url;
                                         //音频路径
                                         var audioUrl;
-
+                                        //音频字幕路径
+                                        var audio_caption_file_url;
                                         for(var j = 0; j < data.lessons[i].medias.length ; j++){
                                             if(data.lessons[i].medias[j].type == "video"){
                                                 media_url = data.lessons[i].medias[j].media_url;
                                                 caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }else if (data.lessons[i].medias[j].type == "audio"){
                                                 audioUrl = data.lessons[i].medias[j].media_url;
+                                                audio_caption_file_url = data.lessons[i].medias[j].caption_file_url;
                                             }
                                         }
 
@@ -417,7 +421,7 @@
                                         $("#caption_file_url" + flag).attr("value", caption_file_url);
                                         //为图片动态添加点击事件
                                         $("#head_image3").click(function () {
-                                            toVideo(lessons_id, media_url, caption_file_url, "img3", short_content , audioUrl);
+                                            toVideo(lessons_id, media_url, caption_file_url, "img3", short_content , audioUrl,audio_caption_file_url);
                                         });
                                     }
                                 }
