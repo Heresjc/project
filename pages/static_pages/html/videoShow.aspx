@@ -303,10 +303,8 @@
               dataType: 'jsonp',
               crossDomain: true,
               success: function(data) {
-             if(data && data.resultcode == '200'){
                console.log(data);
-               lyric = data;
-             }
+               lyric = data;             
             }
           });
             return lyric;
