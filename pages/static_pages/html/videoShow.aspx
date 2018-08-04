@@ -301,16 +301,21 @@
             $.ajax(url, {
             	async:false,
               dataType: 'jsonp',
-              crossDomain: true,
-              success: function(data) {
-               console.log(data);
-               lyric = data;             
-            }
+              jsonp : 'callback',
+              jsonpCallback: 'handleResponse',
+              crossDomain: true
+              //success: function(data) {
+              // console.log(data);
+              // lyric = data;             
+            //}
           });
             return lyric;
         }
 
 
+        function handleResponse(data){
+        	console.log(data);
+      }
         function parseLyric(text) {
             //将文本分隔成一行一行，存入数组
             var lines = text.split('\n'),
