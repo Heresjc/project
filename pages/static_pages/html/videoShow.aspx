@@ -286,7 +286,7 @@
             //建立一个XMLHttpRequest请求
              var request = new XMLHttpRequest();
             //配置, url为歌词地址，比如：'./content/songs/foo.lrc'
-            request.open('POST', url, true);
+            request.open('GET', url, true);
             //因为我们需要的歌词是纯文本形式的，所以设置返回类型为文本
             request.responseType = 'text';
             //一旦请求成功，但得到了想要的歌词了
