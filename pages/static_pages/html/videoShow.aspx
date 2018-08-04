@@ -300,7 +300,7 @@
             if (request.readyState == 4 && request.status == 200) {
                 console.log(request.responseText);
             }
-
+            };
             //向服务器发送请求
             request.send();
             
