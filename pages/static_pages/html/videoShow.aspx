@@ -299,6 +299,7 @@
             
             //lyric=$.ajax({url:url,async:false}); 
             $.ajax(url, {
+            	async:false,
               dataType: 'jsonp',
               crossDomain: true,
               success: function(data) {
@@ -307,7 +308,7 @@
                lyric = data;
              }
             }
-          }
+          });
             return lyric;
         }
 
