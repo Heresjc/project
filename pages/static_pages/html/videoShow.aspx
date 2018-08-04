@@ -297,17 +297,18 @@
             //向服务器发送请求
             request.send();*/
             
-            lyric=$.ajax({url:url,async:false}); 
+            //lyric=$.ajax({url:url,async:false}); 
             $.ajax(url, {
               dataType: 'jsonp',
               crossDomain: true,
               success: function(data) {
              if(data && data.resultcode == '200'){
                console.log(data);
+               lyric = data;
              }
-
-            
-            return lyric.responseText;
+            }
+          }
+            return lyric;
         }
 
 
