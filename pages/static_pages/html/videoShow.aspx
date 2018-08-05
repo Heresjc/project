@@ -269,7 +269,7 @@
 
                             for(var k = 0; k<resultArr.length; k++){
                                 if (resultArr[i][0] == resultArr[k][0]){
-                                    html += "<p class='mark' style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
+                                    html += "<p class='markContent' style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }else {
                                     html += "<p id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }
@@ -283,7 +283,8 @@
                     };
                 };
                 
-                $(".mark").scrollTop(40);
+                var markContent = $(".markContent").offset();      
+                $("lyricContainer").animate({scrollTop:markContent.top - "90" + "px"}, 500);
             };
         }
 
