@@ -331,8 +331,7 @@
             });
             //最后将结果数组中的元素按时间大小排序，以便保存之后正常显示歌词
             result.sort(function(a, b) {
-                //return a[0] - b[0];
-                return  b[0] -a[0];
+                return a[0] - b[0];
             });
             return result;
         }
