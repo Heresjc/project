@@ -269,16 +269,21 @@
 
                             for(var k = 0; k<resultArr.length; k++){
                                 if (resultArr[i][0] == resultArr[k][0]){
-                                    html += "<p style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
+                                    html += "<p class='mark' style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }else {
                                     html += "<p id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }
                             }
                             $("#lyricContainer").html(html);
+                            
                             html = "";
                         }
+                        
+                        
                     };
                 };
+                
+                $(".mark").scrollTop(40);
             };
         }
 
