@@ -248,7 +248,7 @@
                 "[02:07.41][00:46.06]树叶一层层拨开了伪装\n" +
                 "[02:11.29][00:50.25]彩虹一步步露出美丽脸庞 无限的光亮\n";
             //var lrcText = getLyric(audio_caption_file_url);
-            //var lrcText = audio_caption_file_url;
+            var lrcText = audio_caption_file_url;
             //通过正则拆分的字幕arr
             var resultArr = parseLyric(lrcText);
 
@@ -331,7 +331,8 @@
             });
             //最后将结果数组中的元素按时间大小排序，以便保存之后正常显示歌词
             result.sort(function(a, b) {
-                return a[0] - b[0];
+                //return a[0] - b[0];
+                return  b[0] -a[0];
             });
             return result;
         }
