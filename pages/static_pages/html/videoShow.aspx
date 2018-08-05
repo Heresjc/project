@@ -284,7 +284,7 @@
                 };
                 
                 var markContent = $(".markContent").offset();      
-                $("lyricContainer").animate({scrollTop:markContent.top - "90" + "px"}, 500);
+                $("#lyricContainer").animate({scrollTop:markContent.top - "90" + "px"}, 500);
             };
         }
 
