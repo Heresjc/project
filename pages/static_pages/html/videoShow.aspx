@@ -305,7 +305,7 @@
 
         function parseLyric(text) {
             //将文本分隔成一行一行，存入数组
-            var lines = text.split('\n'),
+            var lines = text.split('\r\n'),
                 //用于匹配时间的正则表达式，匹配的结果类似[xx:xx.xx]
                 pattern = /\[\d{2}:\d{2}.\d{2}\]/g,
                 //保存最终结果的数组
