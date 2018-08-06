@@ -192,7 +192,7 @@
                     <div id="dhimgdiv"></div>
                 </div>
                 <div class="handoutPic">
-                    <h3 class="text-center ">—引申知识讲解—</h3>
+                    <h3 class="text-center ">—今日彩蛋—</h3>
                     <div id="yszsjj0"></div>
                     <div id="ysimgdiv"></div>
                 </div>
@@ -478,7 +478,7 @@
                                 zdjx.push(data.handouts[i]);
                             } else if (data.handouts[i].type == "对话中文翻译") {
                                 dhzwfy.push(data.handouts[i]);
-                            } else if (data.handouts[i].type == "引申知识讲解") {
+                            } else if (data.handouts[i].type == "今日彩蛋") {
                                 yszsjj.push(data.handouts[i]);
                             }else if (data.handouts[i].type == "版权声明") {
                                 bqsm.push(data.handouts[i]);
