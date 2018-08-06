@@ -283,9 +283,10 @@
                     };
                 };
                 
-                var markContent = $(".markContent").offset();   
+                //var markContent = $(".markContent").offset();   
   
-                $("#lyricContainer").scrollTop(markContent-120);
+                //$("#lyricContainer").scrollTop(markContent-120);
+                $("#lyricContainer").scrollTop(120);
                 //$("#lyricContainer").animate({scrollTop:markContent.top - 120}, 500);
             };
         }
