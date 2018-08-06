@@ -277,17 +277,15 @@
                             $("#lyricContainer").html(html);
                             
                             html = "";
+                            
+                            var markContent = $(".markContent").offset(); 
+                            $("#lyricContainer").animate({scrollTop:markContent.top - 40}, 500);  
                         }
                         
                         
                     };
-                };
+                };               
                 
-                //var markContent = $(".markContent").offset();   
-  
-                //$("#lyricContainer").scrollTop(markContent-120);
-                $("#lyricContainer").scrollTop(120);
-                //$("#lyricContainer").animate({scrollTop:markContent.top - 120}, 500);
             };
         }
 
