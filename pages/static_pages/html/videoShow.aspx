@@ -278,14 +278,14 @@
                             
                             html = "";
                             
-
+                            //var markContent = $(".markContent").offset(); 
+                            $("#lyricContainer").animate({scrollTop:120}, 500);  
                         }
                         
                         
                     };
                 };               
-                    //var markContent = $(".markContent").offset(); 
-                    $("#lyricContainer").animate({scrollTop:120}, 500);  
+                
             };
         }
 
