@@ -279,7 +279,7 @@
                             html = "";
                             
                             var markContent = $(".markContent").offset(); 
-                            $("#lyricContainer").animate({top:(markContent.top - 40) + "px"}, 500);  
+                            $("#lyricContainer").animate({top:-(markContent.top - 40) + "px"}, 500);  
                         }
                         
                         
