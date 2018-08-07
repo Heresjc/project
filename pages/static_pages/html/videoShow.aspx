@@ -281,7 +281,8 @@
                             //var markContent = $(".markContent").offset(); 
                             //$("#lyricContainer").animate({top:"-40px"}, 500);  
 								var inner=document.getElementById("inner");
-								$("#lyricContainer").scrollTop(inner.offsetTop);
+								consoloe.log(inner.offsetTop);
+								$("#lyricContainer").scrollTop(100);
                         }
                         
                         
