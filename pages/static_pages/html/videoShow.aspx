@@ -291,7 +291,7 @@
 								//var demo1=document.getElementById("lyricContainer");
 								var inner=document.getElementById("inner");
 								function Marquee(){
-								    $("#demo").scrollTop(inner.offsetTop);
+								    $("#lyricContainer").scrollTop(inner.offsetTop);
 								}
 								var MyMar=setInterval(Marquee,speed);
 								//demo.onmouseover=function() {clearInterval(MyMar)};
