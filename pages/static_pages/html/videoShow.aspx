@@ -269,7 +269,7 @@
 
                             for(var k = 0; k<resultArr.length; k++){
                                 if (resultArr[i][0] == resultArr[k][0]){
-                                    html += "<p class='markContent' style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
+                                    html += "<p class='markContent' id='inner' style='color:#99CCFF' id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }else {
                                     html += "<p id='"+resultArr[k][0]+"'>"+resultArr[k][1]+"</p>";
                                 }
@@ -289,7 +289,8 @@
                 var speed=100;
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
-								alert($(".markContent").offsetTop);
+								var inner=document.getElementById("inner");
+  							alert(inner.offsetTop);
 								function Marquee(){
 								    $("#demo").scrollTop(100);
 								}
