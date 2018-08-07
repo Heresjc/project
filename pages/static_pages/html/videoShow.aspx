@@ -136,8 +136,9 @@
     </div>
     <div rel="tab-3" class="content">
         <div class="vdoSubtitle">
-            <div class="vdoSubtle">
-                <div id="lyricContainer" style="font-size: 20px;font-family: Arial,'Times New Roman',Serif;color: #a5a5a5;position: relative;height:200px;overflow-y:auto"></div>
+            <div class="vdoSubtle" id="demo">
+                <div id="lyricContainer demo1" style="font-size: 20px;font-family: Arial,'Times New Roman',Serif;color: #a5a5a5;height:200px;overflow:hidden;"></div>
+                <div id="demo2"></div>
                 <!--水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网水边%20各种空灵鸟叫_爱给网-->
             </div>
         </div>
@@ -278,14 +279,31 @@
                             
                             html = "";
                             
-                            var markContent = $(".markContent").offset(); 
-                            $("#lyricContainer").animate({top:"-40px"}, 500);  
+                            //var markContent = $(".markContent").offset(); 
+                            //$("#lyricContainer").animate({top:"-40px"}, 500);  
                         }
                         
                         
                     };
-                };               
-                
+                }; 
+                              
+                var speed=100;
+								var demo=document.getElementById("demo");
+								var demo2=document.getElementById("demo2");
+								var demo1=document.getElementById("demo1");
+								demo2.innerHTML=demo1.innerHTML
+								function Marquee(){
+								    if(demo2.offsetTop-demo.scrollTop<=0)
+								        demo.scrollTop-=demo1.offsetHeight;
+								    else{
+								        demo.scrollTop++;
+								    }
+								}
+								var MyMar=setInterval(Marquee,speed);
+								demo.onmouseover=function() {clearInterval(MyMar)};
+								demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+								
+								
             };
         }
 
