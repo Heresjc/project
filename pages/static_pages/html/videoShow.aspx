@@ -291,7 +291,9 @@
 										if (this.currentTime> resultArr[i][0]){
 										$('#lyricContainer ul').css('top',-i*40+200+'px'); //让歌词向上移动    
 										$('#lyricContainer ul li').css('color','#fff');    
-										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词    
+										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词  
+										var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
+										$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
 										}
 								}
             };
