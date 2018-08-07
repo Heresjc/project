@@ -289,7 +289,7 @@
                 var speed=100;
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
-								alert($(".markContent".offsetTop);
+								alert($(".markContent").offsetTop);
 								function Marquee(){
 								    $("#demo").scrollTop(100);
 								}
