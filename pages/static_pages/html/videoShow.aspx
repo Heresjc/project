@@ -290,7 +290,7 @@
 								var demo=document.getElementById("demo");
 								var demo1=document.getElementById("lyricContainer");
 								var markContent = $(".markContent").offsetTop;
-								alert(markContent);
+								console.log(markContent);
 								function Marquee(){
 								    demo.scrollTop(100);
 								}
