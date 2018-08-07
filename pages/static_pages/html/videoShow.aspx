@@ -278,7 +278,8 @@
                             
                             html = "";
                             
-                            
+                            //var markContent = $(".markContent").offset(); 
+                            //$("#lyricContainer").animate({top:"-40px"}, 500);  
                         }
                         
                         
@@ -286,11 +287,11 @@
                 }; 
                               
                 var speed=100;
-                var markContent = $(".markContent").offset();   
 								var demo=document.getElementById("demo");
 								var demo1=document.getElementById("lyricContainer");
+								var markContent = $(".markContent").offsetTop;
 								function Marquee(){
-								    demo.scrollTop((markContent.top)-40);
+								    demo.scrollTop(markContent);
 								}
 								var MyMar=setInterval(Marquee,speed);
 								demo.onmouseover=function() {clearInterval(MyMar)};
