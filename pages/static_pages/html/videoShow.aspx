@@ -289,8 +289,8 @@
                               
                 var speed=100;
 								var demo=document.getElementById("demo");
-								var demo2=document.getElementById("lyricContainer");
-								var demo1=document.getElementById("demo1");
+								var demo2=document.getElementById("demo2");
+								var demo1=document.getElementById("lyricContainer");
 								demo2.html(demo1.html());
 								function Marquee(){
 								    if(demo2.offsetTop-demo.scrollTop<=0)
