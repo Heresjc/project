@@ -288,7 +288,7 @@
                        
 								var inner=document.getElementById("inner");
 								console.log(inner.offsetTop);
-								$("#lyricContainer").animate({top:inner.offsetTop+"px"}, 500);       
+								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500);       
                 //var speed=100;
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
