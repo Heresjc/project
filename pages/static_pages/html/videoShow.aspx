@@ -287,16 +287,16 @@
                 }; 
                               
                 var speed=100;
-								var demo=document.getElementById("demo");
-								var demo1=document.getElementById("lyricContainer");
+								//var demo=document.getElementById("demo");
+								//var demo1=document.getElementById("lyricContainer");
 								var markContent = $(".markContent").offsetTop;
-								console.log(markContent);
+								alert(markContent);
 								function Marquee(){
-								    demo.scrollTop(100);
+								    $("#demo").scrollTop(100);
 								}
 								var MyMar=setInterval(Marquee,speed);
-								demo.onmouseover=function() {clearInterval(MyMar)};
-								demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+								//demo.onmouseover=function() {clearInterval(MyMar)};
+								//demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 								
 								
             };
