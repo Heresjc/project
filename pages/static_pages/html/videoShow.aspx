@@ -258,7 +258,7 @@
                 //h += "<p id='"+resultArr[j][0]+"'>"+resultArr[j][1]+"</p>";
                 h += "<li>"+resultArr[j][1]+"</li>";
             }
-            $("#lyricContainer").html(h);
+            $("#lyricContainer ul").html(h);
 
             var html = "";
 
