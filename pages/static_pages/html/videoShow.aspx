@@ -280,15 +280,15 @@
                             
                             //var markContent = $(".markContent").offset(); 
                             //$("#lyricContainer").animate({top:"-40px"}, 500);  
-								var inner=document.getElementById("inner");
-								console.log(inner.offsetTop);
-								$("#lyricContainer").scrollTop(100);
                         }
                         
                         
                     };
                 }; 
-                              
+                       
+								var inner=document.getElementById("inner");
+								console.log(inner.offsetTop);
+								$("#lyricContainer").scrollTop(inner.offsetTop);       
                 //var speed=100;
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
