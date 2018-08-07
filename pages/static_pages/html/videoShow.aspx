@@ -261,7 +261,7 @@
             $("#lyricContainer ul").html(h);
 
             var html = "";
-
+            var inner = "";
             audio.ontimeupdate = function(e) {
                 //遍历所有歌词，看哪句歌词的时间与当然时间吻合
                 /*for (var i = 0, l = resultArr.length; i < l; i++) {
@@ -287,17 +287,20 @@
 								console.log(inner.offsetTop);
 								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500);
 								*/
+								
 								for (var i = 0, l = resultArr.length; i < l; i++) {    
 										if (this.currentTime> resultArr[i][0]){
 										$('#lyricContainer ul').css('top',-i*40+200+'px'); //让歌词向上移动    
 										$('#lyricContainer ul li').css('color','#fff');    
 										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词  
-										var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
-										var inner=document.getElementById(''+(i+1)+'');
-										console.log(inner.offsetTop);
-										$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
+										//var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
+										inner=document.getElementById(''+(i+1)+'');
+
 										}
 								}
+								console.log(inner.offsetTop);
+								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
+								inner="";
             };
         }
 
