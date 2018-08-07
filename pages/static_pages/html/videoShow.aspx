@@ -293,6 +293,7 @@
 										$('#lyricContainer ul li').css('color','#fff');    
 										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词  
 										var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
+										console.log(inner.offsetTop);
 										$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
 										}
 								}
