@@ -256,7 +256,7 @@
             var h = "";
             for(var j = 0; j<resultArr.length; j++){
                 //h += "<p id='"+resultArr[j][0]+"'>"+resultArr[j][1]+"</p>";
-                h += "<li>"+resultArr[j][1]+"</li>";
+                h += "<li id='"+j+"'>"+resultArr[j][1]+"</li>";
             }
             $("#lyricContainer ul").html(h);
 
@@ -292,7 +292,8 @@
 										$('#lyricContainer ul').css('top',-i*40+200+'px'); //让歌词向上移动    
 										$('#lyricContainer ul li').css('color','#fff');    
 										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词  
-										var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
+										//var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
+										var inner=$('#'+i);
 										console.log(inner.offsetTop);
 										$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
 										}
