@@ -291,7 +291,7 @@
 								for (var i = 0, l = resultArr.length; i < l; i++) {    
 										if (this.currentTime> resultArr[i][0]){
 										//$('#lyricContainer ul').css('top',-i*40+200+'px'); //让歌词向上移动    
-										//$('#lyricContainer ul li').css('color','#fff');    
+										$('#lyricContainer ul li').css('color','#a5a5a5');    
 										$('#lyricContainer ul li:nth-child('+(i+1)+')').css('color','red'); //高亮显示当前播放的哪一句歌词  
 										//var inner=$('#lyricContainer ul li:nth-child('+(i+1)+')');
 										inner=document.getElementById(''+(i+1)+'');
@@ -299,7 +299,9 @@
 										}
 								}
 								console.log(inner.offsetTop);
-								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
+								console.log($(inner).offset().top);
+								//$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
+								$("#lyricContainer").animate({scrollTop:$(inner).offset().top}, 200); 
 								inner="";
             };
         }
