@@ -290,9 +290,8 @@
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
 								var inner=document.getElementById("inner");
-  							alert(inner.offsetTop);
 								function Marquee(){
-								    $("#demo").scrollTop(100);
+								    $("#demo").scrollTop(inner.offsetTop);
 								}
 								var MyMar=setInterval(Marquee,speed);
 								//demo.onmouseover=function() {clearInterval(MyMar)};
