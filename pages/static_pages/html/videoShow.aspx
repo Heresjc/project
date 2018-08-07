@@ -286,14 +286,15 @@
                     };
                 }; 
                               
-                var speed=100;
+                //var speed=100;
 								//var demo=document.getElementById("demo");
 								//var demo1=document.getElementById("lyricContainer");
 								var inner=document.getElementById("inner");
-								function Marquee(){
-								    $("#lyricContainer").scrollTop(inner.offsetTop);
-								}
-								var MyMar=setInterval(Marquee,speed);
+								$("#lyricContainer").scrollTop(inner.offsetTop);
+								//function Marquee(){
+								//    $("#lyricContainer").scrollTop(inner.offsetTop);
+								//}
+								//var MyMar=setInterval(Marquee,speed);
 								//demo.onmouseover=function() {clearInterval(MyMar)};
 								//demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 								
