@@ -287,7 +287,7 @@
 								console.log(inner.offsetTop);
 								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500);
 								*/
-								for (var i = 0, l = str.length; i < l; i++) {    
+								for (var i = 0, l = resultArr.length; i < l; i++) {    
 										if (this.currentTime> resultArr[i][0]){
 										$('#lyricContainer ul').css('top',-i*40+200+'px'); //让歌词向上移动    
 										$('#lyricContainer ul li').css('color','#fff');    
