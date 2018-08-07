@@ -298,10 +298,7 @@
 
 										}
 								}
-								console.log(inner.offsetTop);
-								console.log($(inner).offset().top);
-								//$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
-								$("#lyricContainer").animate({scrollTop:$(inner).offset().top}, 200); 
+								$("#lyricContainer").animate({top:"-"+inner.offsetTop+"px"}, 500); 
 								inner="";
             };
         }
